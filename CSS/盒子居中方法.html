@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS盒子居中的方法</title>
+
+    <!--<style>
+        /*1、--margin:固定宽高居中--（父级的offsetWidth/Height-子元素的offsetWidth/Height）/2得到的就是子元素的margin值>*/
+        /*#container{*/
+            /*width: 600px;*/
+            /*height: 600px;*/
+            /*border: 2px solid black;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*margin: 250px 250px;*/
+            /*background-color: #0ff;*/
+        /*}*/
+
+        /*2、利用margin负值来定位：要先对父元素和子元素定位，设置子元素的left和top值负值是子元素的宽高值的50%*/
+        /*#container {*/
+            /*position: relative;*/
+            /*width: 600px;*/
+            /*height: 500px;*/
+            /*border: 1px solid #000;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box {*/
+            /*position: absolute;*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*margin: -100px -100px;*/
+            /*background-color: #0ff;*/
+        /*}*/
+
+        /*3、绝对定位 给子元素的lef、top、right、bottom的值都设置为0，然后margin为auto*/
+        /*#container {*/
+            /*position: relative;*/
+            /*width: 600px;*/
+            /*height: 600px;*/
+            /*border: 1px solid #000;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box {*/
+            /*position: absolute;*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*margin: auto;*/
+            /*background-color: #0ff;*/
+        /*}*/
+        /*4、利用display:table-cell来控制子元素的垂直居中 ie浏览器下除了ie8兼容，其他版本不兼容*/
+        /*#container {*/
+            /*display: table-cell;*/
+            /*width: 600px;*/
+            /*height: 500px;*/
+            /*vertical-align: middle;*/
+            /*border: 1px solid #000;*/
+        /*}*/
+        /*#box {*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*margin: 0 auto;*/
+            /*background-color: #0ff;*/
+        /*}*/
+        /*5、弹性盒子flex居中：CSS3引入的新布局，但是在IE9及以下不兼容*/
+        /*#container {*/
+            /*display: -webkit-flex;*/
+            /*display: flex;*/
+            /*-webkit-align-items: center;*/
+            /*align-items: center;*/
+            /*-webkit-justify-content: center;*/
+            /*justify-content: center;*/
+            /*width: 600px;*/
+            /*height: 500px;*/
+            /*border: 1px solid #000;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box {*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background-color: #0ff;*/
+        /*}*/
+
+        /*6、transform实现居中：translate(x,y)，x、y各为-50%。类似于margin负值*/
+        /*#container {*/
+            /*position: relative;*/
+            /*width: 600px;*/
+            /*height: 600px;*/
+            /*border: 1px solid #000;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box {*/
+            /*position: relative;*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*-webkit-transform: translate(-50%, -50%);*/
+            /*-ms-transform: translate(-50%, -50%);*/
+            /*-moz-transform: translate(-50%, -50%);*/
+            /*-o-transform: translate(-50%, -50%);*/
+           /*transform: translate(-50%, -50%);*/
+            /*background-color: #0ff;*/
+        /*}*/
+
+        /*7、不确定宽高的居中方法 只要left和right的百分值一样就可以实现水平居中；top和bottom百分值一样就可以实现垂直居中；但是需要注意以上四个百分值都必须小于50%，不然就看不到子元素*/
+        /*#container {*/
+            /*position: relative;*/
+            /*width: 600px;*/
+            /*height: 600px;*/
+            /*border: 1px solid #000;*/
+            /*margin: auto;*/
+        /*}*/
+        /*#box {*/
+            /*position: absolute;*/
+            /*left: 30%;*/
+            /*right: 30%;*/
+            /*top: 30%;*/
+            /*bottom: 30%;*/
+            /*background-color: #08f;*/
+        /*}*/
+        /*8、button实现几何居中：利用button做外容器，里边的块元素会自动垂直居中，只需要控制一下水平居中就可以达到效果:水平居中 margin:0 auto*/
+        button {
+            width: 600px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #0ff;
+        }
+
+    </style>*-->
+
+    <!--一下是在js实现居中:通过计算父级和当前元素的宽高的差值除以2就能分别得到当前元素的left和top值，但是在CSS样式中必须设置定位：比如相对整个html结构定位absolute-->
+    <style>
+        #main{
+            width: 400px;
+            height: 300px;
+            border: 2px solid blue;
+            position: absolute;
+
+        }
+        #content{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: lightcoral;
+           text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--<button>-->
+        <!--<div></div>-->
+    <!--</button>-->
+    <!--<div id="container">-->
+        <!--<div id="box"></div>-->
+    <!--</div>-->
+    <div id="main">
+        <div id="content">
+            Sun
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            // 获取浏览器窗口
+            var winScreen = document.documentElement;
+            // 获取main的div元素
+            var main = document.getElementById("main");
+            // 通过窗口宽高和div宽高计算位置
+            var main_left = (winScreen.clientWidth - main.clientWidth)/2 + "px";
+            var main_top = (winScreen.clientHeight - main.clientHeight)/2 + "px";
+            console.log(winScreen.clientWidth)
+            // 位置赋值
+            main.style.left = main_left;
+            main.style.top = main_top;
+
+            // 获取content的div元素
+            var content = document.getElementById("content");
+            var content_left = (main.clientWidth - content.clientWidth)/2 + "px";
+            var content_top = (main.clientHeight - content.clientHeight)/2 + "px";
+            content.style.left = content_left;
+            content.style.top = content_top;
+        }
+    </script>
+</body>
+</html>

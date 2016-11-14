@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动问题</title>
+    <!--以下样式再外部元素没有设置宽高，但是内部元素也没有设置浮动的情况下，外部元素是会被自动撑开的；但是单内部元素设置了float的时候会出现：背景不能显示、边框不能撑开、margin 设置值不能正确显示；所以这个时候就需要清除浮动：有以下几种方法参考-->
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            color:white ;
+            font-size: 24px;
+            text-align: center;
+        }
+        .outer{
+            background:lightblue;
+            border: 2px solid black;
+            padding: 50px;
+            margin: 100px auto;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: left;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background: purple;
+            float: left;
+        }
+        /*--1、在内部元素的最后一个元素后面添加一个新元素，给该元素添加个类名然后再CSS样式中设置clear：both*/
+        /*.clear{*/
+            /*clear: both;*/
+        /*}*/
+
+        /*2、给父级添加一个class类名： .over-flow给它设置样式overflow:auto;zoom:1--zoom是处理IE兼容问题*/
+        /*.over-flow{*/
+            /*overflow: hidden;*/
+          /*!*overflow有三个值hidden,auto,visible；除了visible都可以用来清除浮动*!*/
+            /*zoom: 1;*/
+        /*}*/
+
+        /*3、伪类：after清除浮动，是给浮动元素添加一个元素块，给这个元素快设置一些样式*/
+        .outer {zoom:1;}    /*==for IE6/7兼容*/
+        .outer :after {
+            clear:both;
+            content:'.';
+            display:block;
+            width: 0;
+            height: 0;
+            visibility:hidden;
+        }
+        /*当一个内层元素是浮动的时候，如果没有关闭浮动时，其父元素也就不会再包含这个浮动的内层元素，因为此时浮动元素已经脱离了文档流。也就是为什么外层不能被撑开了！*/
+    </style>
+</head>
+<body>
+<div class="outer over-flow">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>

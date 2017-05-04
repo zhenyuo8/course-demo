@@ -1,0 +1,246 @@
+body {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "tahoma", "arial", "simsun", "宋体", "微软雅黑", "宋体";
+  min-width: 1200px;
+}
+body .showin {
+  display: none;
+}
+body .banner {
+  padding-top: .5rem;
+}
+body p {
+  word-break: normal;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background-color: #FFFFFF;
+  height: 0.5rem;
+  width: 100%;
+  min-width: 1200px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.header .outnav {
+  width: 81.38%;
+  margin: 0 auto;
+  height: 0.5rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.1rem;
+}
+.header .outnav li {
+  height: 0.3rem;
+  float: left;
+}
+.header .outnav li .innernav {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 0.3rem;
+  padding: 0.08rem 0.2rem;
+  padding-left: 2rem;
+}
+.header .outnav li .innernav li {
+  height: 0.13rem;
+  float: left;
+  padding-left: 0.2rem;
+}
+.header .outnav li .innernav li a {
+  color: #7C7C7C;
+  font-size: 0.133rem;
+}
+.header .outnav li .innernav li a:hover {
+  color: #FA4F52;
+}
+.header .outnav li .innernav li .active {
+  color: #FA4F52;
+}
+.header .outnav .logo {
+  width: 2.5rem;
+}
+.header .outnav .logo img {
+  height: 100%;
+}
+.header .outnav .register {
+  float: right;
+  padding-left: 0.5rem;
+}
+.header .outnav .register a {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border-radius: 0.125rem;
+  padding: 0 0.1rem;
+  text-align: center;
+  font-size: 0.12rem;
+  border: solid 1px #e7e7e7;
+  color: #7C7C7C;
+}
+.header .outnav .login a:hover {
+  background-color: #FF4A5A;
+  color: #FFFFFF;
+}
+.header .outnav .register a:hover {
+  background-color: #FF4A5A;
+  color: #FFFFFF;
+}
+.header .outnav .login {
+  float: right;
+  padding-left: 0.15rem;
+}
+.header .outnav .login a {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border-radius: 0.125rem;
+  padding: 0 0.1rem;
+  text-align: center;
+  font-size: 0.12rem;
+  border: solid 1px #e7e7e7;
+  color: #7C7C7C;
+}
+.friendlink {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  background-color: #535353;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 18%;
+  padding-top: 0.29rem;
+  padding-bottom: 0.1rem;
+  font-size: 0;
+  overflow: hidden;
+}
+.friendlink .linkcontent {
+  float: left;
+  width: 22%;
+  height: 1.8rem;
+}
+.friendlink .linkcontent h5 {
+  color: #FFFFFF;
+  font-size: 0.14rem;
+  text-align: left;
+  height: 0.25rem;
+  line-height: 0.25rem;
+}
+.friendlink .linkcontent ul {
+  padding-top: 0.127rem;
+}
+.friendlink .linkcontent ul li {
+  height: 0.22rem;
+  line-height: 0.22rem;
+  font-size: 0.116rem;
+  color: #FFFFFF;
+}
+.friendlink .linkcontent:nth-child(4) {
+  width: 34%;
+}
+.friendlink .linkcontent:nth-child(4) h5 {
+  text-align: center;
+}
+.friendlink .linkcontent:nth-child(4) .imgs {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 0.127rem;
+}
+.friendlink .linkcontent:nth-child(4) .imgs ul {
+  width: 100%;
+  height: 0.88rem;
+}
+.friendlink .linkcontent:nth-child(4) .imgs ul li {
+  float: left;
+  box-sizing: border-box;
+  height: 0.3rem;
+  text-align: center;
+  width: 33%;
+  position: relative;
+  z-index: 1;
+}
+.friendlink .linkcontent:nth-child(4) .imgs ul li img {
+  height: 100%;
+}
+.friendlink .linkcontent:nth-child(4) .imgs ul .phoneactive {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: -50%;
+  left: -80%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+}
+.friendlink .linkcontent:nth-child(4) .imgs ul .phoneactive img {
+  width: 100% !important;
+}
+.footer {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 17.5px 0px;
+  padding-left: 137px;
+  background-color: #3E3E3E;
+  font-size: 0;
+}
+.footer img {
+  height: 19px;
+  float: left;
+}
+.footer span {
+  display: block;
+  float: left;
+  width: 46%;
+  height: 19px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding-left: 6px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.footer span:nth-child(2) {
+  text-align: left;
+}
+.footer span:nth-child(3) {
+  text-align: right;
+}

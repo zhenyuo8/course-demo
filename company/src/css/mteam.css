@@ -1,0 +1,411 @@
+.banner {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+  overflow: hidden;
+}
+.banner .none {
+  display: none !important;
+}
+.banner img {
+  width: 100%;
+}
+.banner .bannerinner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+}
+.banner .bannerinner h3 {
+  width: 100%;
+  font-size: 0.8rem;
+  padding-top: 3.8rem;
+  padding-bottom: 0.208rem;
+  text-align: center;
+  padding-left: 0.64rem;
+}
+.banner .bannerinner h4 {
+  font-size: 0.48rem;
+  padding-top: 0.288rem;
+  padding-left: 0.64rem;
+  text-align: left;
+}
+.banner .bannerinner ul {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.456rem;
+  font-size: 0;
+}
+.banner .bannerinner ul li {
+  float: left;
+  width: 24.7%;
+  height: 1.456rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1019);
+  padding-left: 2.39%;
+  font-size: 0.512rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.456rem;
+  margin-left: 0.4%;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.5);
+}
+.banner .bannerinner ul .bannericonactive {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.banner .bannerinner ul .bannericonactive .bannericono {
+  display: none !important;
+}
+.banner .bannerinner ul .bannericonactive .bannericoactive {
+  display: inline-block !important;
+}
+.banner .bannerinner ul li:nth-child(1) {
+  margin-left: 0;
+}
+.synergy {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.64rem;
+  padding-bottom: 1.34rem;
+  text-align: center;
+}
+.synergy .synergytitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: 0.512rem;
+}
+.synergy .synergytitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.synergy h6 {
+  font-size: 0.512rem;
+  line-height: 1rem;
+  color: #9E9E9E;
+  padding: 0 1.5rem;
+  padding-bottom: 1.472rem;
+}
+.synergy .cyclcircle {
+  width: 6.58rem;
+  height: 6.58rem;
+  margin: 0 auto;
+  position: relative;
+}
+.synergy .cyclcircle .outcyclcircle {
+  width: 6.58rem;
+  height: 6.58rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.synergy .cyclcircle .outcyclcircle img {
+  width: 105%;
+}
+.synergy .cyclcircle .outcyclcircle .innercyclcircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 0;
+  top: 0.29rem;
+}
+.synergy .cyclcircle .outcyclcircle .innercyclcircle img {
+  width: 100%;
+}
+.synergy .cyclcircle .cyclcircleecnter {
+  width: 4.16rem;
+  height: 4.16rem;
+  position: absolute;
+  top: 1.21rem;
+  left: 1.21rem;
+}
+.synergy .cyclcircle .cyclcircleecnter img {
+  width: 100%;
+}
+.synergy .cyclcircle .innerlogo {
+  width: 3.16rem;
+  height: 3.16rem;
+  position: absolute;
+  top: 1.71rem;
+  left: 1.71rem;
+}
+.synergy .cyclcircle .innerlogo img {
+  width: 100%;
+}
+.synergy .cyclcircle .icon {
+  width: 1.46rem;
+  height: 1.46rem;
+  position: absolute;
+}
+.synergy .cyclcircle .icon img {
+  width: 100%;
+}
+.synergy .cyclcircle .icon .show {
+  position: absolute;
+  font-size: 0.42rem;
+  color: #DC3831;
+}
+.synergy .cyclcircle .icon1 {
+  top: 1.04rem;
+  left: -0.6rem;
+}
+.synergy .cyclcircle .icon1 .show {
+  left: -0.6rem;
+  top: 0.53rem;
+}
+.synergy .cyclcircle .icon2 {
+  top: 1.04rem;
+  right: -0.6rem;
+}
+.synergy .cyclcircle .icon2 .show {
+  right: -1rem;
+  top: 0.53rem;
+}
+.synergy .cyclcircle .icon3 {
+  bottom: 1.04rem;
+  right: -0.5rem;
+}
+.synergy .cyclcircle .icon3 .show {
+  right: -1rem;
+  top: 0.53rem;
+}
+.synergy .cyclcircle .icon4 {
+  bottom: 1.04rem;
+  left: -0.5rem;
+}
+.synergy .cyclcircle .icon4 .show {
+  left: -1rem;
+  top: 0.53rem;
+}
+.scenario {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.64rem;
+  padding-bottom: 1.34rem;
+  text-align: center;
+}
+.scenario .scenariotitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: 0.512rem;
+}
+.scenario .scenariotitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.scenario .device,
+.scenario .swiper-container,
+.scenario .swiper-wrapper,
+.scenario .swiper-slides {
+  background-color: #F5F5F5;
+  height: 6rem;
+}
+.scenario .swiper-slides {
+  height: 6rem;
+}
+.scenario .pagination {
+  bottom: -0.2rem;
+}
+.scenario .content-slides {
+  height: 6rem;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+.scenario .content-slides .imgs {
+  display: inline-block;
+  width: 2.848rem;
+  height: 2.848rem;
+  border-radius: 1.424rem;
+  background-color: #E73A3A;
+  text-align: center;
+}
+.scenario .content-slides .imgs img {
+  width: 100%;
+  vertical-align: middle;
+}
+.scenario .content-slides h4 {
+  color: #9F9F9F;
+  font-size: 0.4rem;
+  text-align: center;
+  padding-top: 0.448rem;
+}
+.scenario .content-slides h5 {
+  color: #9F9F9F;
+  font-size: 0.4rem;
+  text-align: center;
+  padding-top: 0.248rem;
+}
+.case {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.64rem;
+  padding-bottom: 1.34rem;
+  text-align: center;
+}
+.case .casetitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: 0.512rem;
+}
+.case .casetitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.case .device,
+.case .swiper-container,
+.case .swiper-wrapper,
+.case .swiper-slides {
+  background-color: #FFFFFF;
+  height: 12.416rem;
+}
+.case .paginations {
+  bottom: -0.16rem;
+}
+.case .content-slides {
+  height: 12.416rem;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+.case .content-slides .imgs {
+  display: inline-block;
+  width: 3.52rem;
+  height: 3.52rem;
+  border-radius: 3.26rem;
+  text-align: center;
+}
+.case .content-slides .imgs img {
+  width: 100%;
+}
+.case .content-slides p {
+  color: #9F9F9F;
+  font-size: 0.4rem;
+  text-align: left;
+  padding-top: 0.448rem;
+  line-height: 1.5em;
+}
+.down {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.64rem;
+  padding-bottom: 1.34rem;
+  text-align: center;
+  padding-bottom: 0.912rem;
+}
+.down .downtitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: 0.512rem;
+  padding-bottom: 1rem;
+}
+.down .downtitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.down .downimg {
+  display: inline-block;
+  width: 4.58rem;
+  border-bottom: solid 0.048rem #E73A3A;
+}
+.down .downimg img {
+  width: 100%;
+  border: none;
+}
+.down .registercontent {
+  width: 8.6rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  font-size: 0;
+  text-align: left;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 1.2rem;
+}
+.down .registercontent input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 100%;
+  width: 65.37%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  padding-left: 0.28rem;
+}
+.down .registercontent .btn {
+  display: inline-block;
+  height: 100%;
+  line-height: 0.8rem;
+  width: 34.63%;
+  background-color: #fa4f52;
+  opacity: 0.3;
+  border-radius: 0.4rem;
+  font-size: 0.45rem;
+  color: #FFFFFF;
+  text-align: center;
+}

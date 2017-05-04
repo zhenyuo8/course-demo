@@ -1,0 +1,122 @@
+///////flex 布局////////////////////////
+.flex-main(){
+  width: 100%;
+  display: inline-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  position: relative;
+}
+//宽度100%  垂直居中 自左到右 不换行
+.flex-nomal(){
+  .flex-main;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+//宽度100%  垂直居中 两端对齐 不换行
+.flex-between(){
+  .flex-nomal;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+
+//宽度100%  垂直居中 右对齐 不换行
+.flex-end(){
+  .flex-nomal;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+
+//宽度100%  垂直居中 两端有空隙对齐 不换行
+.flex-around(){
+  .flex-between;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+}
+
+//宽度100%  垂直居中 两端对齐 换行
+.flex-wrap(){
+  .flex-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+//宽度100%  垂直居中 两端有空隙对齐 换行
+.flex-wrap(){
+  .flex-around;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+//垂直  靠左
+.flex-colum(){
+  .flex-main;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+}
+//垂直排列 水平居中
+.flex-colum_c(){
+  .flex-colum;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+
+//垂直排列 水平居中  垂直居中c
+.flex-colum_cc(){
+  .flex-colum_c;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+}
+//垂直排列 水平靠左  垂直居中c
+.flex_colum_l(){
+  .flex_colum;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+}
+
+//↓方法##############################################
+//图片自适应
+.img_free(){
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+//文字省略号
+.font_over(){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.borderbox(){
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.flex1(){
+  -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;     /* OLD - Firefox 19- */
+  -webkit-flex: 1;      /* Chrome */
+  -ms-flex: 1;           /* IE 10 */
+  flex: 1;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+

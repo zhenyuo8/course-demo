@@ -1,0 +1,107 @@
+.down {
+  padding-top: 1.6rem;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.down .left {
+  float: left;
+  width: 40%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 0.7rem;
+}
+.down .left img {
+  width: 100%;
+}
+.down .right {
+  float: right;
+  width: 60%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-right: 1.8rem;
+}
+.down .right h4 {
+  text-align: left;
+  font-size: 0.21rem;
+  color: #262626;
+  padding-left: 2px;
+}
+.down .right h5 {
+  text-align: left;
+  font-size: 0.17rem;
+  color: #9E9E9E;
+  line-height: 0.38rem;
+  padding-left: 2px;
+}
+.down .right ul {
+  width: 100%;
+  height: 1.45rem;
+  margin: 0 auto;
+  padding-bottom: 0.4rem;
+  padding-top: 0.2rem;
+  overflow: hidden;
+}
+.down .right ul li {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  width: 24%;
+  margin-left: 1%;
+  height: 1.45rem;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 0.433rem;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.down .right ul li .downimg {
+  height: 0.4rem;
+}
+.down .right ul li h5 {
+  color: #CCCCCC;
+  font-size: 0.117rem;
+  line-height: 0.4rem;
+  text-align: center;
+}
+.down .right ul li .pcactive {
+  padding-bottom: 0.2rem;
+}
+.down .right ul li .pcactive img {
+  padding-top: 0.2rem;
+}
+.down .right ul li .pcactive h5 {
+  color: #262626;
+  font-size: 0.117rem;
+  text-align: center;
+}
+.down .right ul .phoneactive {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 1.55rem;
+  padding: 0.1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: solid 2px #FA4F52;
+  background-color: #FFFFFF;
+}
+.down .right ul .phoneactive img {
+  width: 100% !important;
+}

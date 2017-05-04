@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>首页</title>
+    <link rel="shortcut icon" href="/front/images/circle_ico.ico" />
+    <link rel="stylesheet" href="/html/index/css/reset.css">
+    <link rel="stylesheet" href="/html/index/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/html/index/css/team.css" />
+
+    <script src="/html/index/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function resizeBaseFontSize(){
+            var rootHtml = $('html'),
+                deviceWidth = rootHtml.width();
+            if(deviceWidth>760&&deviceWidth < 1200){
+                deviceWidth = 1200;
+            }else if(deviceWidth<760){
+                document.location.href="/html/index/mteam.html"
+            }
+            var fonts= (deviceWidth / 12) + "px";
+            rootHtml.css({'font-size':fonts});
+        }
+        resizeBaseFontSize();
+    </script>
+
+</head>
+<body>
+
+<div class="showin">           </div>
+
+    <div class="header">
+        <ul class="outnav">
+            <li class="logo">
+                <img src="/html/index/img/newlogo.png" alt="">
+            </li>
+
+            <li>
+                <ul class="innernav">
+                    <li><a class="active" href="/html/index/team.html">首页</a></li>
+                    <li><a href="/html/index/case.html">产品</a></li>
+                    <li><a href="/html/index/example.html">案例</a></li>
+                    <li><a href="/html/index/serve.html">服务</a></li>
+                    <li><a href="http://open.upesn.com/">开放平台</a></li>
+                    <!--<li><a href="/html/index/about.html">关于友空间</a></li>-->
+                    <li><a href="/html/index/down.html">下载</a></li>
+                </ul>
+            </li>
+            <li class="login">
+                <a href="/account/signUp/login">登录</a>
+            </li>
+            <li class="register">
+                <a href="/account/reg/beginUser">马上注册</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img class="bannerimg" src="/html/index/img/homebanner01.jpg" alt="">
+        <img class="bannerimg none" src="/html/index/img/homebanner02.jpg" alt="">
+        <img class="bannerimg none" src="/html/index/img/homebanner03.jpg" alt="">
+        <img class="bannerimg none" src="/html/index/img/homebanner04.jpg" alt="">
+
+        <div class="bannerinner">
+            <h3>轻松工作&nbsp;协同可见</h3>
+            <h4></h4>
+            <a href="http://upesn.com/html/demo.html   ">
+                <div class="experiencebtn">
+                    立即体验
+                </div>
+            </a>
+            <ul>
+                <li class="bannericonactive">
+                    <div class="left">
+                        <img class="bannericono" src="/html/index/img/banner01.png" alt="">
+                        <img class="bannericoactive" src="/html/index/img/banner11.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h5 class="title">聚合 </h5>
+                        <h5 class="content">企业级门户</h5>
+                        <h5 class="content">企业应用平台</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img class="bannericono" src="/html/index/img/banner02.png" alt="">
+                        <img class="bannericoactive" src="/html/index/img/banner12.png" alt="">
+
+                    </div>
+                    <div class="right">
+                        <h5 class="title">协作 </h5>
+                        <h5 class="content">企业办公协作</h5>
+                        <h5 class="content">提升工作效率</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img class="bannericono" src="/html/index/img/banner03.png" alt="">
+                        <img class="bannericoactive" src="/html/index/img/banner13.png" alt="">
+
+                    </div>
+                    <div class="right">
+                        <h5 class="title">共享  </h5>
+                        <h5 class="content">企业文化传播</h5>
+                        <h5 class="content">知识沉淀和共享</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img class="bannericono" src="/html/index/img/banner04.png" alt="">
+                        <img class="bannericoactive" src="/html/index/img/banner14.png" alt="">
+
+                    </div>
+                    <div class="right">
+                        <h5 class="title">生态 </h5>
+                        <h5 class="content">完善的开放平台</h5>
+                        <h5 class="content">对接用友云市场</h5>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="synergy">
+        <div class="synergytitle">协同云服务
+            <hr>
+        </div>
+        <h6> 友空间，为企业提供办公协同、沟通协作等核心价值，提高管理和工作效率。</h6>
+        <div class="cyclcircle">
+            <div class="outcyclcircle" id="outcyclcircle">
+                <img src="/html/index/img/outrun.png" alt="">
+                <div class="innercyclcircle">
+                    <img src="/html/index/img/innerrun.png" alt="">
+                </div>
+            </div>
+            <div class="cyclcircleecnter" id="cyclcircleecnter">
+                <img src="/html/index/img/ringlogo.png" alt="">
+            </div>
+            <div class="icon icon1">
+                <img class="stateicon" src="/html/index/img/cicon01.png" datasrc="/html/index/img/cicona01.png"  alt="">
+                <div class="subicon subicon1  show">
+                    <img src="/html/index/img/subcicona31.png" alt="">
+                </div>
+                <div class="subicon subicon2  show">
+                    <img src="/html/index/img/subcicona32.png" alt="">
+                </div>
+                <div class="subicon subicon3  show">
+                    <img src="/html/index/img/subcicona33.png" alt="">
+
+                </div>
+                <div class="subicon subicon4  show">
+                    <img src="/html/index/img/subcicona34.png" alt="">
+                </div>
+
+            </div>
+            <div class="icontext icontext1">人</div>
+            <div class="icon icon2">
+                <img class="stateicon" src="/html/index/img/cicon02.png" datasrc="/html/index/img/cicona02.png" alt="">
+
+                <div class="subicon subicon1  show">
+                    <img src="/html/index/img/subcicona11.png" alt="">
+                </div>
+                <div class="subicon subicon2  show">
+                    <img src="/html/index/img/subcicona12.png" alt="">
+                </div>
+                <div class="subicon subicon3  show">
+                    <img src="/html/index/img/subcicona13.png" alt="">
+
+                </div>
+                <div class="subicon subicon4  show">
+                    <img src="/html/index/img/subcicona14.png" alt="">
+                </div>
+            </div>
+            <div class="icontext icontext2">工作</div>
+
+            <div class="icon icon3">
+                <img class="stateicon" src="/html/index/img/cicon03.png" datasrc="/html/index/img/cicona03.png"  alt="">
+
+                <div class="subicon subicon1  show">
+                    <img src="/html/index/img/subcicona21.png" alt="">
+                </div>
+                <div class="subicon subicon2  show">
+                    <img src="/html/index/img/subcicona22.png" alt="">
+                </div>
+                <div class="subicon subicon3  show">
+                    <img src="/html/index/img/subcicona23.png" alt="">
+
+                </div>
+                <div class="subicon subicon4  show">
+                    <img src="/html/index/img/subcicona24.png" alt="">
+                </div>
+            </div>
+            <div class="icontext icontext3">业务</div>
+
+            <div class="icon icon4">
+                <img class="stateicon" src="/html/index/img/cicon04.png" datasrc="/html/index/img/cicona04.png"   alt="">
+
+
+
+
+                <div class="subicon subicon1  show">
+                    <img src="/html/index/img/subcicona01.png" alt="">
+                </div>
+                <div class="subicon subicon2  show">
+                    <img src="/html/index/img/subcicona02.png" alt="">
+                </div>
+                <div class="subicon subicon3  show">
+                    <img src="/html/index/img/subcicona03.png" alt="">
+
+                </div>
+                <div class="subicon subicon4  show">
+                    <img src="/html/index/img/subcicona04.png" alt="">
+                </div>
+
+            </div>
+            <div class="icontext icontext4">知识</div>
+
+            <div class="innerlogo">
+                <img src="/html/index/img/innerlogo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="scenario">
+        <div class="inerscenario">
+            <div class="scenariotitle">应用场景
+                <hr>
+            </div>
+            <ul>
+                <a href="/html/index/case.html?go=0">
+                <li>
+
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec11.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec01.png" alt="">
+                    </div>
+                    <h4>协同门户</h4>
+                    <h5>统一服务入口</h5>
+                </li>
+                </a>
+                <a href="/html/index/case.html?go=3">
+
+                <li>
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec12.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec02.png" alt="">
+                    </div>
+                    <h4>资讯传播</h4>
+                    <h5>激活企业文化</h5>
+                </li>
+                </a>
+                <a href="/html/index/case.html?go=1">
+                <li>
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec14.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec04.png" alt="">
+                    </div>
+                    <h4>高效审批</h4>
+                    <h5>精细化管理落地</h5>
+                </li>
+                </a>
+                <a href="/html/index/case.html?go=2">
+                <li>
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec13.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec03.png" alt="">
+
+                    </div>
+                    <h4>社交沟通</h4>
+                    <h5>协作无界限</h5>
+                </li>
+                </a>
+                <a href="/html/index/case.html?go=4">
+                <li>
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec15.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec05.png" alt="">
+                    </div>
+                    <h4>移动签到</h4>
+                    <h5>员工省心、领导放心</h5>
+                </li>
+                </a>
+                <a href="/html/index/case.html?go=5">
+                <li>
+                    <div class="outimg">
+                        <img class="activeimg" src="/html/index/img/sec16.png" alt="">
+                        <img class="stateimg" src="/html/index/img/sec06.png" alt="">
+                    </div>
+                    <h4>执行管理</h4>
+                    <h5>提高员工战斗力</h5>
+                </li>
+                </a>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="case">
+        <div class="casetitle">客户案例
+            <hr>
+        </div>
+        <div class="slider">
+            <div class="sliderleft">
+                <img src="/html/index/img/leftbtnactive.png" alt="">
+            </div>
+            <div class="slidercontent">
+                <div class="slidercontentinner">
+                    <ul>
+                        <li>
+                            <h5>世纪金源
+                            </h5>
+                            <p>
+
+                                世纪金源集团是著名实业家、旅菲爱国华侨黄如论先生创办的综合性跨行业国际集团。是以“房地产开发、星级大饭店、大型购物中心、金融资本运营、物业管理、核桃油生产”为大型支柱产业的综合性投资集团。</p>
+
+                            <h5>
+                            </h5>
+                            <p>
+                            <p>
+
+                                友空间将企业和员工、伙伴和客户紧密连接在一起，满足了世纪金源在移动化办公方面的特定需求，形成世纪金源统一信息化平台的移动门户，是世纪金源在移动互联网时代所需要的。
+                            </p>
+
+                        </li>
+                        <li>
+                            <h5>顾家家居</h5>
+                            <p>
+
+                                顾家家居，享誉全球的家居品牌。专业从事客餐厅及卧室家具产品的研究、开发、生产与销售，为全球家庭提供健康、舒适、环保的客餐厅及卧室家居产品。产品远销世界120余个国家和地区，在国内外拥有超过3000家品牌专卖店。
+                            </p>
+                            <p>
+
+                                作为大型企业，庞大的组织架构使得顾家家居内部的信息传递越来越复杂，友空间使顾家切实感受到了“扁平化”沟通带来的效率提升。微邮、公告、话题等应用使沟通和协同变得异常简单轻松，大大减轻了原来信息员的工作，降低了企业运营成本。
+                            </p>
+
+                        </li>
+                        <li>
+                            <h5>海淀园工委</h5>
+                            <p>
+
+                                中共北京市海淀区委海淀园工作委员会（简称区委海淀园工委），是负责园区企业党建工作和机关党建工作的区委派出机构，与海淀园管委会（区科委）合署办公。海淀园工委基层党组织830个，覆盖企业近7000余家，管理党员近2.6万名。
+                            </p>
+                            <p>
+
+                                友空间用互联网方式，将传统党建工作创新化，以友空间为平台，串联党委与机构之间的联系，实现多对多的沟通，大大推动了党建工作的顺利进行，让党建工作更加灵活，为党建工作开放新思路。
+                            </p>
+
+                        </li>
+                        <li>
+                            <h5>同福碗粥
+                            </h5>
+                            <p>
+
+                            同福碗粥股份有限公司是一家集粮食基地建设、粮食加工、食品研发、生产、销售、粥铺建设、早餐工程、电子商务等于一体的现代化企业集团，是大健康、功能性的营养食品企业。集团拥有5000人职工队伍，遍布国内24个省市自治区的营销网络。
+                            </p>
+                            <p>
+
+                                借助友空间，同福碗粥拥有了统一的社交化办公协同平台，实现了移动化办公，节省了办公费用，提高了工作效率，满足了复杂业务协作的深度沟通需要，将管理直接延伸至交易前的社交过程，构建企业互联新生态，实现社会化商业。
+                            </p>
+
+
+                        </li>
+                        <li>
+                            <h5>沃风网络</h5>
+                            <p>
+
+                                江苏沃风网络科技有限公司（趣办公）是国内一体化办公服务解决方案领导品牌。五大业务板块：趣办公商城，趣办公云平台，趣乐保，趣乐印，趣礼品等服务能360°全方位满足企业的办公需求，发挥自身能力优势，整合办公服务行业资源，形成一站式智能化、网络化的办公信息服务云平台。
+                            </p>
+                            <p>
+
+                                趣办公充分利用友空间“公告”、“审批”、“日志”等功能，建立不同团队、群组，将工作的事情留在工作该在的地方，使沃风网络的员工全身心投入工作当中，为趣办公在提升效率的同时增加了人文关怀的趣味，携手进入趣办公的时代。
+                            </p>
+
+                        </li>
+                        <li>
+                            <h5>远联钢铁</h5>
+                            <p>
+
+                                赤峰远联钢铁有限责任公司是2002年赤峰市委、市政府重点招商引资企业，公司年产能已达300万吨。公司现有员工6000余人，占地面积约125万平方米，总资产42亿元。公司主要产品为:连铸钢坯、棒材、线材、螺纹钢、带钢等。
+                            </p>
+                            <p>
+
+                                借助友空间，远联钢铁实现了企业运营效率的提升。支持多组织架构的友空间，将该企业的所有工厂和部门纳入其中，远联钢铁的工友利用“工作圈”，发布闲置设备的信息、发布照片使全员可见、第一时间进行沟通，提高了组织管理和协作效率。
+                            </p>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="sliderright">
+                <img src="/html/index/img/rightbtnno.png" alt="">
+            </div>
+        </div>
+        <div class="caseplace">
+            <ul>
+                <li class="active"><img src="/html/index/img/case01.png" alt=""></li>
+                <li><img src="/html/index/img/case02.png" alt=""></li>
+                <li><img src="/html/index/img/case03.png" alt=""></li>
+                <li><img src="/html/index/img/case04.png" alt=""></li>
+                <li><img src="/html/index/img/case05.png" alt=""></li>
+                <li><img src="/html/index/img/case06.png" alt=""></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="down">
+        <div class="downtitle">客户端下载
+            <hr>
+        </div>
+        <ul>
+            <li>
+                <a href="https://itunes.apple.com/us/app/qi-ye-kong-jian-esn/id960672631?l=zh&ls=1&mt=8">
+                <div class="phoneactive">
+                    <img src="/html/index/img/ipcod.png" alt="">
+                </div>
+                <img class="downimg" src="/html/index/img/down00.png" alt="">
+                <h5>iphone</h5>
+                </a>
+
+            </li>
+            <li>
+                <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.yongyou.youpu">
+                <div class="phoneactive">
+                    <img src="/html/index/img/adcod.png" alt="">
+                </div>
+                <img class="downimg" src="/html/index/img/down01.png" alt="">
+                <h5>Android</h5>
+                </a>
+            </li>
+            <li>
+                <a href="http://upesn.com/account/downLoad/mac">
+                <div class="phoneactive pcactive">
+                    <img src="/html/index/img/downactive.png" alt="">
+                    <h5>Mac桌面端</h5>
+                </div>
+                <img class="downimg" src="/html/index/img/down02.png" alt="">
+                <h5>Mac桌面端</h5>
+                </a>
+
+            </li>
+            <li>
+                <a href="http://upesn.com/account/downLoad/win">
+                <div class="phoneactive pcactive">
+                    <img src="/html/index/img/downactive.png" alt="">
+                    <h5>Windows桌面端</h5>
+                </div>
+                <img class="downimg" src="/html/index/img/down03.png" alt="">
+                <h5>Windows桌面端</h5>
+                </a>
+            </li>
+        </ul>
+        <div class="registercontent">
+            <input type="text" placeholder="请输入手机号或邮箱" id="phonenumber">
+            <div class="btn" id="btnregester">快速注册</div>
+        </div>
+    </div>
+
+    <div class="friendlink">
+        <div class="linkcontent">
+            <h5>产品</h5>
+            <ul>
+                <a href="/html/index/case.html">
+                  <li>友空间</li>
+                </a>
+                <a href="http://open.upesn.com/">
+                    <li>开放平台</li>
+                </a>
+                <a href="/html/index/serve.html">
+                    <li>客户服务</li>
+                </a>
+                <a href="http://upesn.com/html/demo.html">
+                    <li>产品体验</li>
+                </a>
+            </ul>
+        </div>
+        <div class="linkcontent">
+            <h5>合作</h5>
+            <ul>
+                <a href="http://www.yonyou.com/">
+                    <li>用友官网</li>
+                </a>
+                <a href="http://cloud.yyuap.com">
+                 <li>用友云官网</li>
+                </a>
+                <a href="http://yonyoucloud.com/ ECS.html">
+                     <li>用友云市场</li>
+                </a>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <div class="linkcontent">
+             <a href="/html/index/about.html">            <h5>关于我们</h5>            </a>
+            <ul>
+                <li>热线电话：</li>
+                <li>4006-815-456转4</li>
+                     <a href="mailto:esnservice@yonyou.com">
+                <li>联系邮箱</li>
+                </a>
+                 <a href="http://chat.looyuoms.com/chat/chat/p.do?c=20001742&f=10062447&g=10063341">
+                <li>在线客服</li>
+                </a>
+            </ul>
+        </div>
+        <div class="linkcontent">
+            <h5>客户端下载</h5>
+            <div class="imgs">
+                <ul>
+
+                    <li>
+                        <a href="img/mdowncode.png">
+                            <div class="phoneactive">
+                                <img src="/html/index/img/mdowncode.png" alt="">
+                            </div>
+                            <img src="/html/index/img/footerphone.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                                <a href="http://upesn.com/account/downLoad/mac">
+                                    <img class="downpcb" src="/html/index/img/down02.png" datasrc="/html/index/img/pcmacactive.png" alt=""></a>
+                    </li>
+                    <li>
+                            <a href="http://upesn.com/account/downLoad/win">
+                                <img class="downpcb" src="/html/index/img/down03.png" datasrc="/html/index/img/pcwinactive.png"  alt=""></a>
+
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <img src="/html/index/img/gh.png" alt="">
+        <span>
+            京公网安备 11010802020548号
+        </span>
+        <span>
+            用友网络科技股份有限公司© Copyright 2017 京ICP备15057199号
+        </span>
+    </div>
+
+    <script src="/html/index/js/jquery.min.js"></script>
+    <script src="/html/index/js/common.js"></script>
+    <script type="text/javascript" src="/html/index/js/jquery.rotate.min.js"></script>
+    <script src="/html/index/js/team.js"></script>
+
+    <script>
+
+
+        $(function() {
+            function getUrl(str){
+                url = window.location.host;
+                var host = {
+                    'upesn.com': 'https://u.upesn.com', //线上环境
+                    'www.upesn.com': 'https://u.upesn.com', //线上环境
+                    'pub.esn.ren': 'https://u-pub.esn.ren', //预发布环境
+                    'web.chaoke.com:91': 'http://123.103.9.204:84'//测试环境
+//                    'esn.chaoke.com': 'http://u.esndev.com' //本地环境
+                };
+                if(typeof str !== 'string' || str === ''){
+                    str = '';
+                }
+                if(url && host[url]){
+                    str = host[url] + str;
+                }
+                return str;
+            }
+
+
+            var getQueryStringByName = function (name) {
+                var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+                if (result == null || result.length < 1) {
+                    return "";
+                }
+                return result[1];
+            };
+            var _script = document.createElement('script');
+            _script.src = getUrl("/sso/login_status?random=" + (+new Date));
+            _script.onload = _script.onreadystatechange = function () {
+                if (!_script.readyState || _script.readyState === 'loaded' || _script.readyState === 'complete') {
+                    if (_loginstat && !_isExpired) {
+                        var ref = getQueryStringByName('referer'), link = "/account/login/actlogin/?sid=" + parseSid(sid);
+                        window.location.href = link;
+                    }
+                };
+            };
+            document.getElementsByTagName('head')[0].appendChild(_script);
+            function parseSid(sid) {
+                if (sid.indexOf('+') > 0)return encodeURIComponent(sid);
+                return sid;
+            }
+        });
+    </script>
+</body>
+</html>

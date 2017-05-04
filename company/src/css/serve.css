@@ -1,0 +1,168 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner .textcontent {
+  position: absolute;
+  top: 2rem;
+  left: 1.2rem;
+  width: 10rem;
+  color: #FFFFFF;
+}
+.banner .textcontent h3 {
+  width: 100%;
+  font-size: 0.333rem;
+  text-align: center;
+  line-height: 0.6rem;
+}
+.group {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.766rem;
+  padding-bottom: 0.625rem;
+  text-align: center;
+}
+.group .grouptitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: .25rem;
+}
+.group .grouptitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.group .content {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0.6rem 2.5rem 0.8rem 2.5rem;
+  overflow: hidden;
+  font-size: 0;
+}
+.group .content .lists {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.group .content .lists .imgs {
+  display: inline-block;
+  font-size: 0;
+  width: 0.88rem;
+  height: 0.89rem;
+}
+.group .content .lists .imgs img {
+  width: 100%;
+}
+.group .content .lists h4 {
+  padding-top: .3rem;
+  font-size: 0.15rem;
+  line-height: 0.22rem;
+  color: #262626;
+}
+.group .content .lists h5 {
+  font-size: 0.12rem;
+  line-height: 0.22rem;
+  color: #7C7C7C;
+}
+.group .content .lists .active {
+  display: none;
+}
+.group .content .lists:hover .state {
+  display: none;
+}
+.group .content .lists:hover .active {
+  display: inline-block;
+}
+.save {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.766rem;
+  padding-bottom: 0.625rem;
+  text-align: center;
+}
+.save .savetitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  color: #404040;
+  font-size: .25rem;
+}
+.save .savetitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #DCDCDC;
+}
+.save .content {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  overflow: hidden;
+  padding: 0.6rem 2.5rem 0.8rem 2.5rem;
+  font-size: 0;
+}
+.save .content .lists {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.save .content .lists .imgs {
+  display: inline-block;
+  font-size: 0;
+  width: 0.88rem;
+  height: 0.89rem;
+}
+.save .content .lists .imgs img {
+  width: 100%;
+}
+.save .content .lists h4 {
+  padding-top: .3rem;
+  font-size: 0.15rem;
+  line-height: 0.22rem;
+  color: #262626;
+}
+.save .content .lists h5 {
+  font-size: 0.12rem;
+  line-height: 0.22rem;
+  color: #7C7C7C;
+}
+.save .content .lists .active {
+  display: none;
+}
+.save .content .lists:hover .state {
+  display: none;
+}
+.save .content .lists:hover .active {
+  display: inline-block;
+}

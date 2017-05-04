@@ -1,0 +1,128 @@
+@import "tools";
+.down{
+  padding-top: 1.6rem;
+  background-color: #F5F5F5;
+  //.flex-between;
+  overflow: hidden;
+  .left{
+    float: left;
+    width: 40%;
+    .borderbox;
+    padding-left: 1rem;
+    padding-right: 0.7rem;
+    img{
+      width: 100%;
+    }
+  }
+  .right{
+    float: right;
+    width: 60%;
+    .borderbox;
+    padding-right: 1.8rem;
+    h4{
+      text-align: left;
+      font-size: 0.21rem;
+      color: #262626;
+      padding-left: 2px;
+      //line-height: 0.58rem;
+    }
+    h5{
+      text-align: left;
+      font-size: 0.17rem;
+      color: #9E9E9E;
+      line-height: 0.38rem;
+      padding-left: 2px;
+
+
+    }
+
+    ul{
+      width: 100%;
+      height: 1.45rem;
+      margin: 0 auto;
+      padding-bottom: 0.4rem;
+      padding-top: 0.2rem;
+      overflow: hidden;
+      li{
+        .borderbox;
+        width: 24%;
+        margin-left: 1%;
+        height: 1.45rem;
+        background-color: #FFFFFF;
+        text-align: center;
+        padding-top: 0.433rem;
+        float: left;
+        position: relative;
+        z-index: 1;
+        .downimg{
+          height:0.4rem;
+        }
+        h5{
+          color: #CCCCCC;
+          font-size: 0.117rem;
+          line-height: 0.4rem;
+          text-align: center;
+        }
+        .pcactive{
+          //height: 100%;
+          padding-bottom: 0.2rem;
+
+          img{
+            padding-top: 0.2rem;
+          }
+          h5{
+            color: #262626;
+            font-size: 0.117rem;
+            text-align: center;
+          }
+        }
+      }
+      .phoneactive{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top:0;
+        left: 0;
+        width: 100%;
+        .borderbox;
+        height:1.55rem;
+        padding: 0.1rem;
+        padding-bottom: 0.2rem;
+        border-bottom: solid 2px #FA4F52;
+        background-color: #FFFFFF;
+        img{
+          width:100% !important;
+        }
+      }
+
+
+
+      //li:nth-child(1){
+      //  img{
+      //    //width:0.41rem;
+      //  }
+      //}
+      //li:nth-child(2){
+      //  img{
+      //    //width:0.41rem;
+      //  }
+      //}
+      //li:nth-child(3){
+      //  img{
+      //    //width:0.38rem;
+      //  }
+      //}
+      //li:nth-child(4){
+      //  img{
+      //    //width:0.31rem;
+      //  }
+      //}
+      //li:hover .phoneactive{
+      //  display: block;
+      //}
+
+    }
+
+
+  }
+}

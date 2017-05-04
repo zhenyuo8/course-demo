@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="友空间,企业空间,协同办公,移动办公,企业社交,企业协同,IM,团队协作,互联网转型,互联网+,企业互联网,协同">
+    <meta name="description" content="友空间是大中型企业及组织的社交化协同平台，多类型空间架构、多群组场景协作、多样化沟通方式、社交化业务协作，支持企业级、产业链、社会化应用场景，为企业提供扁平化管理、移动化业务和社会化商业等核心价值。">
+    <meta property="wb:webmaster" content="6208d97faf744bb7" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>友空间</title>
+    <link rel="shortcut icon" href="http://front.upesn.com/images/circle_ico.ico" />
+    <link href="http://front.upesn.com/css/ui/bootstrap/css/bootstrap.min.css?1485161182585" rel="stylesheet">
+    <link href="http://front.upesn.com/css/login/style.css?1485161182585" rel="stylesheet" type="text/css">
+    <link href="http://front.upesn.com/css/login/login.css?1485161182585" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://front.upesn.com/js/components/widget/uiEmail/autoEmail.css?1485161182585" />
+    <!--[if lt IE 9]>
+    	<link href="http://front.upesn.com/css/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+	    <link href="/respond/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+	    <script src="/respond/respond.proxy.js"></script>
+        <script src="http://front.upesn.com/js/lib/html5shiv.min.js?1485161182585"></script>
+        <script src="http://front.upesn.com/js/lib/respond.min.js?1485161182585"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        window.location.href = '/account/signUp/login';
+    </script>
+</head>
+<body class="loginwrap">
+<!-- header -->
+<header class="header-bg header-new">
+    <div class="container">
+        <div class="pull-left"><a href="/"><img src="http://front.upesn.com/new_front/images/account/logo.png" alt="友空间"></a></div>
+        <div class="pull-right"><a href="http://esn.upesn.chaoke.com/account/reg/beginUser" id="register4" class="js-resourceBtn">注册</a></div>
+    </div>
+</header>
+<!-- login   -->
+<div class="login">
+    <div class="login-list">
+        <form action="http://u.esndev.com/sso/login" method="post" id="loginform" class="login-form" onsubmit="return ckLoginForm();">
+            <dl class="loginbox">
+                <dd class="pr">
+                    <input type="text" id="username" class="login-input" name="username" value="" placeholder="请输入手机/邮箱">
+                </dd>
+                <dd class="pr">
+                    <input type="password" id="password" class="login-input" name="password" class="fl f14 text_put" value=""  placeholder="密码">
+                </dd>
+            </dl>
+            <dl class="errorwrap">
+                <dd class="error_word error_name" style="display:none;">帐号不能为空</span>
+                <dd class="error_word error_pwd" style="display:none;">密码不能为空</span>
+            </dl>
+            <dl>
+                <dd>
+                    <ul class="login-tool clearfix">
+                        <li class="auto"><input type="checkbox" name="cookietime" id="cookietime" value="604800" tabindex="5" checked="checked" class="login-auto">自动登录</li>
+                        <li><a title="忘记密码" href="/account/lostpasswd/index" class="login-forget">忘记密码</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <input id="loginbtn" type="button" value="登&nbsp;&nbsp;录" class="login-but">
+                </dd>
+            </dl>
+            <input name="loginaddr" type="hidden" value="1" checked="checked">
+            <input type="hidden" value="-1" name="imgcode">
+            <input type="hidden" id="back_url" name="back_url" value="/account/login/actlogin">
+        </form>
+    </div>
+</div>
+<!-- kefu -->
+<div class="kefu container">
+    <div class="">
+        <div class="col-md-4"><div class="icon20">客服热线<br>4006-815-456转4</div></div>
+        <div class="col-md-4"><a href="mailto:esnservice@yonyou.com" class="icon21">客服邮箱<br>esnservice@yonyou.com</a></div>
+        <div class="col-md-4"><a href="http://chat.looyuoms.com/chat/chat/p.do?c=20001742&f=10062447&g=10063341" class="icon22" target="_blank">在线客服<br>为您答疑解惑 &gt;&gt;</a></div>
+    </div>
+</div>
+<!-- footer -->
+<footer class="footwrap text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6"><span class="txt4">应用</span> <a href="/html/index/intro.html" target="_blank">应用介绍</a> <a href="/html/index/price.html" target="_blank" class="temp-adjust-hidden">服务定价</a></div>
+            <div class="col-md-3 col-xs-6"><span class="txt4">服务</span> <a href="/html/index/protocol.html" target="_blank">注册协议</a> <a href="/html/apply/buy.php" target="_blank" class="temp-adjust-hidden">直接购买</a></div>
+            <div class="col-md-3 col-xs-6"><span class="txt4">关于</span> <a href="/html/index/about.html" target="_blank">友空间</a> <a href="/html/index/about.html#fazhan" target="_blank" class="temp-adjust-hidden">伙伴发展</a></div>
+            <div class="col-md-3 col-xs-6"><span class="txt4">移动端下载</span> <div class="erweima"><a href="https://itunes.apple.com/us/app/qi-ye-kong-jian-esn/id960672631?l=zh&ls=1&mt=8" target="_blank"><img src="http://front.upesn.com/images/account/appstore.png" /></a>
+			<div class="ma"><img src="http://front.upesn.com/images/account/ios.png"/></div></div> <div class="erweima"><a href="http://as.yonyouup.cn/app/download/45" target="_blank"><img src="http://front.upesn.com/images/account/appandroid.png" /></a>
+			<div class="ma"><img src="http://front.upesn.com/images/account/android.png"/></div></div></div>
+		</div><br/>
+        <hr class="hr1">
+        <p class="text-center text-white">京ICP备15057199号 版权所有：用友网络科技股份有限公司 © Copyright 2016</p>
+    </div>
+</footer>
+<script type="text/javascript">
+    window.yyBaseurl = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':'+window.location.port : '');
+    window.random = Math.random();
+    _loginstat = true;
+    _isExpired = false;
+    function $id(id){
+        return document.getElementById(id);
+    }
+    function getQueryStringByName(name){
+		var result = location.search.match(new RegExp("[\?\&]" + name+ "=([^\&]+)","i"));
+		if(result == null || result.length < 1){
+			return "";
+		}
+		return result[1];
+	};
+    (function(){
+        document.writeln('\<script type="text\/javascript" src="http://u.esndev.com/sso/login_status?random=' + random + '"\>\<\/script\>');
+    })();
+</script>
+<script type="text/javascript">
+    var needValid = true;
+    var from = '/html/index/team.html';
+    if(typeof(_loginstat) == "undefined"){
+        needValid = false;
+    }
+    if(typeof(_isExpired) == "undefined")_isExpired = false;
+    if(typeof(_username) == "undefined")_username = '';
+    if(_isExpired == true)_loginstat = false;
+    function parseSid(sid){
+        if(sid.indexOf('+') > 0)return encodeURIComponent(sid);
+        return sid;
+    }
+</script>
+<script type="text/javascript">
+
+    function IsPC(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if(!IsPC()){ //手机端跳转
+        var host={
+            'upesn.com' : '//m.upesn.com', //线上环境
+            'pub.esn.ren' : '//m-pub.esn.ren', //预发布环境
+            '123.103.9.204:91' : '//172.20.1.177:93', //测试环境
+            'esn.xiaoning.com' : '//172.20.1.177:797' //本地测试环境
+        },
+            regLink='/account/registerUser/regMobile',
+            resourceBtn=document.getElementById('register4'),
+            url = window.location.host;
+        if(url && host[url]){
+            regLink = host[url] + regLink;
+        }
+        resourceBtn.setAttribute('href',regLink);
+    }
+function loginjs(username){
+    try {
+        if (username != '0'){
+            if(username == '-1'){
+                window.location.href = yyBaseurl + "/space/home/index/";
+            }else{
+                if(needValid){
+                    try{
+                        if(_loginstat == false){
+                            if(_isExpired == true){
+                                window.location.href = yyBaseurl + "/account/login/logout/?refer=" + from;
+                            }else{
+                                var urlStr = window.location.href;
+                                var strArr = urlStr.split(yyBaseurl);
+                                var from = strArr[1];
+                                window.location.href = yyBaseurl + "/account/login/logout/?refer=" + from;
+                            }
+                        }else if(_username != '' && (decodeURIComponent(_username) != username)){
+                        	var href = getQueryStringByName('referer');
+                        	if(href == ''){
+                        		var urlStr = window.location.href;
+    	                        var strArr = urlStr.split(yyBaseurl);
+    	                        var href = strArr[1];
+                        	}
+                            window.location.href = yyBaseurl + "/account/login/actlogin/?sid=" + parseSid(sid) + "&refer=" + href;
+                        }
+                    }catch(e){};
+                }
+            }
+        }else {
+            if( _loginstat == true ){
+                try{
+                    if(_isExpired)document.execCommand('stop');
+                    var href = getQueryStringByName('referer');
+                	if(href == ''){
+                		var urlStr = window.location.href;
+                        var strArr = urlStr.split(yyBaseurl);
+                        var href = strArr[1];
+                	}
+                    window.location.href = yyBaseurl + "/account/login/actlogin/?sid=" + parseSid(sid) + "&refer=" + href;
+                }catch(e){};
+            }
+        }
+    }catch(e){};
+}
+</script>
+<script type="text/javascript" src="/account/login/ajaxloginjs?1485161182585"></script>
+<script>
+(function(){
+    var isIE = navigator.userAgent.indexOf("MSIE")>0 ? true : false;
+    /**
+     * 添加事件处理句柄;
+     * @param Array element [description]
+     * @param Array type    [description]
+     * @param Array handler [description]
+     */
+    function addHandler(element, type, handler){
+        if(element.addEventListener) {
+            element.addEventListener(type, handler, false);
+        }
+        else if(element.attachEvent) {
+            element.attachEvent('on'+type, handler);
+        }
+        else {
+            element['on'+type] = handler;
+        }
+    }
+    // dom ready..
+    window.onload = function(){
+        // 处理切换登录地址的事件;
+        var loginAddr = document.getElementsByTagName('input'),
+            o = null, input_name = '';
+        for(var i = 0; i<loginAddr.length; i++){
+            o = loginAddr[i];
+            input_name = o.getAttribute('name');
+            if (input_name === 'loginaddr') {
+                addHandler(o, 'click', function(e){
+                    var obj = e.target || e.srcElement;
+                    var value = parseInt(isIE ? obj.getAttributeNode('value').value  : obj.getAttribute('value'));
+                    if (value === 1) {
+                        $id('other_login').style.display = 'none';
+                        $id('back_url').setAttribute('value', '/account/login/actlogin');
+                    }
+                    else {
+                        $id('other_login').style.display = 'block';
+                        $id('back_url').setAttribute('value', 'http://www.chanjet.com');
+                    }
+                });
+            }
+        }
+        setBackUrl();
+        function setBackUrl() {
+            var backUrl = $id('back_url');
+            if (backUrl) {
+                var backUrl_val = backUrl.value;
+                if (backUrl_val === '/account/login/actlogin') {
+                    var url = window.yyBaseurl + backUrl_val;
+                    str = window.location.href;
+                    pos = str.indexOf('?');
+                    parastr = str.substr(pos+1,7);
+                    if(parastr == 'referer'){
+                        referer_url = str.substring(pos);
+                    }else{
+                        referer_url = '';
+                    }
+                    backUrl.value = url+referer_url;
+               }
+            }
+        }
+    };
+    // 处理点击登陆按钮的事件;
+    var loginBut = $id('login_but');
+    if (loginBut) {
+        addHandler(loginBut, 'click', function(e){
+            var obj = e.target || e.srcElement;
+            var loginDiv = $id('loginDiv');
+
+            var for_val = obj.getAttribute('for');
+            if (for_val === 'team') {
+                var display_val = loginDiv.style.display;
+                loginDiv.style.display = display_val == 'none' ? '' : 'none';
+            }
+            else {
+                location.href = obj.getAttribute('forurl');
+            }
+        });
+    }
+    // dom ready END
+}());
+</script>
+<script src="http://front.upesn.com/js/plugin/retina/retina.min.js?1485161182585"></script>
+<script src="http://front.upesn.com/js/lib/jq/jquery-1.7.1.min.js?1485161182585"></script>
+<script type="text/javascript" src="http://front.upesn.com/js/modules/login/cookie.js?1485161182585"></script>
+<script src="http://front.upesn.com/js/components/widget/uiEmail/autoEmail.js?1485161182585"></script>
+<script>
+function ckLoginForm() {
+    if ($('#cookietime').checked) {
+        $('#loginform').attr("action", $('#loginform').attr("action") + encodeURIComponent('&cookietime=315360000'));
+    }
+    if ($('#username').val() == '') {
+        $('.error_name').html('帐号不能为空');
+        $('.error_name').show();
+        return false;
+    } else {
+        $('.error_name').hide();
+    }
+    if ($('#password').val() == '') {
+        $('.error_pwd').html('密码不能为空');
+        $('.error_pwd').show();
+        return false;
+    } else {
+        $('.error_pwd').hide();
+    }
+    if ($('#username').val() != '' && $('#password').val() != '' && $('#verifycode').val() != '') {
+        var backUrl = $id('back_url');
+        if (backUrl) {
+            var backUrl_val = backUrl.value;
+            if (backUrl_val === '/account/login/actlogin') {
+                var url = window.yyBaseurl + backUrl_val;
+                str = window.location.href;
+                pos = str.indexOf('?')
+                parastr = str.substr(pos + 1, 7);
+                if (parastr == 'referer') {
+                    referer_url = str.substring(pos);
+                } else {
+                    referer_url = '';
+                }
+                backUrl.value = url + referer_url;
+            }
+        }
+        return true;
+    }
+    return false;
+};
+$(function() {
+    var url = location.href;
+    var urlarr = url.split('?');
+    if (urlarr[1]) {
+        urlarr = urlarr[1].split('=');
+        if (urlarr[0] == 'email') {
+            $("#username").val(urlarr[1]).next().html('');
+            $("#password").focus();
+        }
+    }
+    /**
+     * 提交登录表单;
+     * @return Array [description]
+     */
+    function submitLoginForm() {
+        if (ckLoginForm()) {
+            $loginbtn.val('登录中...');
+            $("#loginform").submit();
+        }
+    }
+    var $loginbtn = $("#loginbtn"); // 登录按钮
+    $loginbtn.on('click', function() {
+        // 登录友户通 start
+        var mUname = $("#username").val();
+        var mPass = $("#password").val();
+        $.ajax({
+            url: "?_rnd="+Math.random(),
+            data: {
+                username: mUname,
+                password: mPass,
+                randomCode: '',
+                sysId: 'qykj'
+            },
+            async: false,
+            type: "get",
+            dataType: "jsonp",
+            jsonpCallback: "jsonpCallback",
+            success: function(data) {
+            }
+        });
+        // 登录友户通 end
+        submitLoginForm();
+    });
+    $("#loginbtn,#username,#password").on('keyup', function(e) {
+        if (e.keyCode == 13) {
+            submitLoginForm();
+        }
+    });
+    // emails
+    new AutoEmail({
+        input: "#username"
+    })
+});
+;(function($){
+    //检测推广来源
+    var param = 'r';
+    var resource = getQueryStringByName(param);
+    if(resource){
+        addCookie(param, resource, 24 * 7, '/');
+        $('.js-resourceBtn').attr('href', function(){
+            return this.href + '?' + param + '=' + resource;
+        });
+    }
+})(jQuery);
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a40a51907a6a6092c5c85e9f18600177";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--易博js代码-->
+<script type="text/javascript">
+var parseDomain = function (str) {
+    if (!str) return '';
+    if (str.indexOf('://') != -1) str = str.substr(str.indexOf('://') + 3);
+    var topLevel = ['com', 'net', 'org', 'gov', 'edu', 'mil', 'biz', 'name', 'info', 'mobi', 'pro', 'travel', 'museum', 'int', 'areo', 'post', 'rec'];
+    var domains = str.split('.');
+    if (domains.length <= 1) return str;
+    if (!isNaN(domains[domains.length - 1])) return str;
+    var i = 0;
+    while (i < topLevel.length && topLevel[i] != domains[domains.length - 1]) i++;
+    if (i != topLevel.length) return domains[domains.length - 2] + '.' + domains[domains.length - 1];
+    else {
+        i = 0;
+        while (i < topLevel.length && topLevel[i] != domains[domains.length - 2]) i++;
+        if (i == topLevel.length) return domains[domains.length - 2] + '.' + domains[domains.length - 1];
+        else return domains[domains.length - 3] + '.' + domains[domains.length - 2] + '.' + domains[domains.length - 1];
+    }
+};
+var host = parseDomain(window.location.host);
+var _adwq = _adwq || [];
+_adwq.push(['_setAccount', 'xzd9t']);
+_adwq.push(['_setDomainName', host]);  //请填写一级域名，如有多个域名请保持和当前页面一致
+_adwq.push(['_trackPageview']);
+
+(function() {
+var adw = document.createElement('script');
+adw.type = 'text/javascript';
+adw.async = true;
+adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(adw, s);
+})();
+</script>
+<!--易博js代码-->
+<!--GrowingIO统计-->
+<script type='text/javascript'>
+var _vds = _vds || [];
+window._vds = _vds;
+(function(){
+    _vds.push(['setAccountId', '9b676ca07803bdc0']);
+    (function(){
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+    })();
+})();
+</script>
+<!--GrowingIO统计-->
+</body>
+</html>

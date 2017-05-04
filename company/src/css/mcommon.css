@@ -1,0 +1,221 @@
+.downbtn {
+  width: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 9999;
+}
+.downbtn img {
+  width: 100%;
+}
+.downbtn .downcode {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: -4rem;
+  top: -1rem;
+  z-index: 9999;
+  padding: .2rem;
+  background-color: white;
+  display: none;
+}
+.downbtn .downcode img {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 1.6rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-right: 0.448rem;
+  padding-left: 0.4rem;
+  z-index: 1;
+}
+.header .logo {
+  display: inline-block;
+  float: left;
+  height: 1.054rem;
+  padding-top: 0.273rem;
+}
+.header .logo img {
+  height: 100%;
+}
+.header .navbtn {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  float: right;
+  width: 0.624rem;
+  padding-top: 0.573rem;
+}
+.header .navbtn img {
+  width: 100%;
+}
+.nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 1.85rem;
+  z-index: 2;
+  width: 4rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-bottom: 0.672rem;
+  padding-top: 0.672rem;
+  -webkit-box-shadow: -3px 3px 3px rgba(124, 124, 124, 0.5);
+  -moz-box-shadow: -3px 3px 3px rgba(124, 124, 124, 0.5);
+  box-shadow: -3px 3px 3px rgba(124, 124, 124, 0.5);
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.nav ul {
+  width: 100%;
+  padding-bottom: 1.472rem;
+}
+.nav ul li {
+  font-size: 0.521rem;
+  height: 0.89rem;
+  line-height: 0.89rem;
+  text-align: center;
+}
+.nav ul li a {
+  color: #7C7C7C;
+  font-size: 0.521rem;
+}
+.nav ul li a:hover {
+  color: #FA4F52;
+}
+.nav ul li .active {
+  color: #FA4F52;
+}
+.nav .regester {
+  display: inline-block;
+  width: 2.864rem;
+  height: 0.92rem;
+  line-height: 0.9rem;
+  border-radius: 0.46rem;
+  text-align: center;
+  font-size: 0.412rem;
+  background-color: #FF4A5A;
+  color: #FFFFFF;
+}
+.nav .login {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: inline-block;
+  width: 2.864rem;
+  height: 0.92rem;
+  line-height: 0.9rem;
+  border-radius: 0.46rem;
+  text-align: center;
+  font-size: 0.412rem;
+  border: solid 1px #e7e7e7;
+  color: #7C7C7C;
+  margin-top: 0.28rem;
+}
+.friendlink {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  background-color: #535353;
+  box-sizing: border-box;
+  padding: 0 0.4rem;
+  padding-top: 0.928rem;
+  padding-bottom: 1.296rem;
+  font-size: 0;
+  overflow: hidden;
+}
+.friendlink .linkcontent {
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+.friendlink .linkcontent h5 {
+  color: #FFFFFF;
+  font-size: 0.42rem;
+  line-height: 0.6rem;
+  text-align: left;
+}
+.friendlink .linkcontent ul {
+  padding-top: 0.127rem;
+}
+.friendlink .linkcontent ul li {
+  font-size: 0.352rem;
+  line-height: 0.5rem;
+  padding-top: 0.04rem;
+  color: #FFFFFF;
+}
+.friendlink .linkcontent ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.friendlink .linkcontent:nth-child(3) {
+  width: 30%;
+}
+.friendlink .linkcontent:nth-child(4) {
+  width: 20%;
+}
+.friendlink .linkcontent:nth-child(4) h5 {
+  text-align: center;
+}
+.friendlink .linkcontent:nth-child(4) .imgs {
+  padding-top: 0.6rem;
+  padding-bottom: 0.1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.friendlink .linkcontent:nth-child(4) .imgs img {
+  width: 100%;
+}
+.footer {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 1.744rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 0.4rem;
+  background-color: #3E3E3E;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer h3 {
+  font-size: 0.32rem;
+}
+.footer h3 img {
+  height: 0.432rem;
+  vertical-align: middle;
+}
+.footer h3 span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: inline-block;
+  padding-top: 0.006rem;
+}
+.footer h4 {
+  font-size: 0.32rem;
+  padding-top: 0.176rem;
+}

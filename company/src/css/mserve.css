@@ -1,0 +1,143 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner .textcontent {
+  position: absolute;
+  top: 1.825rem;
+  left: 0.544rem;
+  color: #FFFFFF;
+}
+.banner .textcontent h5 {
+  font-size: 0.96rem;
+  text-align: left;
+  line-height: 1.712rem;
+}
+.banner .textcontent h6 {
+  font-size: 0.96rem;
+  text-align: left;
+  width: 9.92rem;
+}
+.group {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 1.36rem;
+  padding-bottom: 1.12rem;
+  text-align: center;
+}
+.group .grouptitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  color: #404040;
+  font-size: 0.64rem;
+}
+.group .grouptitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 0.224rem auto;
+  background-color: #DCDCDC;
+}
+.group .content {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+  padding-top: 1.408rem;
+}
+.group .content .lists {
+  float: left;
+  width: 33.33%;
+}
+.group .content .lists .imgs {
+  display: inline-block;
+  font-size: 0;
+  width: 1.856rem;
+  height: 1.856rem;
+  overflow: hidden;
+}
+.group .content .lists .imgs img {
+  width: 100%;
+}
+.group .content .lists h4 {
+  font-size: 0.448rem;
+  color: #262626;
+  padding-top: 0.8rem;
+  padding-bottom: 0.4rem ;
+}
+.group .content .lists h5 {
+  font-size: 0.448rem;
+  color: #7C7C7C;
+  padding-bottom: 0.224rem;
+}
+.save {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-top: 1.36rem;
+  padding-bottom: 1.12rem;
+  text-align: center;
+}
+.save .savetitle {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  color: #404040;
+  font-size: 0.64rem;
+}
+.save .savetitle hr {
+  width: 80%;
+  height: 3px;
+  margin: 0.224rem auto;
+  background-color: #DCDCDC;
+}
+.save .content {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+  padding-top: 1.408rem;
+}
+.save .content .lists {
+  float: left;
+  width: 33.33%;
+}
+.save .content .lists .imgs {
+  display: inline-block;
+  font-size: 0;
+  width: 1.856rem;
+  height: 1.856rem;
+  overflow: hidden;
+}
+.save .content .lists .imgs img {
+  width: 100%;
+}
+.save .content .lists h4 {
+  font-size: 0.448rem;
+  color: #262626;
+  padding-top: 0.8rem;
+  padding-bottom: 0.4rem ;
+}
+.save .content .lists h5 {
+  font-size: 0.448rem;
+  color: #7C7C7C;
+  padding-bottom: 0.224rem;
+}

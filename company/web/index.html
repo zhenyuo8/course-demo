@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="优普企业空间,企业社交网络,企业SNS,社会化网络服务,产业链协同,企业2.0,无边界管理">
+    <meta property="wb:webmaster" content="6208d97faf744bb7" />
+    <title>登录-社会化应用平台</title>
+    <link href="/css/master.css?201408061802464" rel="stylesheet" type="text/css" />
+    <link href="/css/login_new.css?201408061802464" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/images/circle_ico.ico" />
+    <!--[if IE]><script src="/js/lib/html5.js??201408061802464"></script><![endif]-->
+    <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?a40a51907a6a6092c5c85e9f18600177";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+    <body>
+        <!--header-->
+        <div class="header z2">
+            <div class="w1000 login_top clearfix">
+                <div class="fl login_logo"><a href="/"><img src="/images/login_new/login_logo.png" width="165" height="90"></a></div>
+                <div class="fr login_email">
+                    <!--<input type="text" value="暂不对外开放注册，敬请谅解" class="email_inp fl">-->
+                    <form id="apply_form" action="http://esn.bsh.com/account/reg/checkemail" data-skip="true">
+                        <ul class="clearfix">
+                            <li class="fl relative zc_top_input">
+                                <input type="text" id="email" name="email" class="email_inp fl required" data-remote="true" onfocus="var _obj = document.getElementById('emailTips');if(_obj.innerHTML!=''&amp;&amp;_obj.innerHTML!='请输入您的公司域名邮箱')return;_obj.innerHTML=''" onblur="var _obj = document.getElementById('emailTips');if(this.value=='')_obj.innerHTML='请输入您的公司域名邮箱';">
+                                <!--单个input表单回车自动提交的问题-->
+                                <input class="unuseless" style="display:none;">
+                                <span id="emailTips" class="inputSpan" onclick="document.getElementById('email').focus();">请输入您的公司域名邮箱</span>
+                                <aside class="error_ts absolute f14 message_block" id="resendDiv" style="display:none;">
+                                    <span class="fl tip_message">此邮箱已注册过，请直接登录。</span>
+                                    <a onclick="$('#resendDiv').hide();" class="error_close fr"></a>
+                                </aside>
+								<a href="javascript:;" id="regEmailBtn_nouse" class="fl zbtn zbtn_lv" data-module="login">注册</a>
+                            </li>
+                            <li class="fl">
+                                <a href="/html/apply/buy.php" class="fl zbtn zbtn_lv">直接购买</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="login_Bbg">
+            <div class="w1000 relative">
+                <div class="ewm_img clearfix" style="display:none;">
+                    <h3>手机端扫描下载</h3>
+                    <ul class="clearfix">
+                       <li class="fl w01">
+                           <div><img src="/images/login_new/ios.png"></div>
+                           <p>IOS</p>
+                       </li>
+                        <li class="fl w01">
+                            <div><img src="/images/login_new/Android.png"></div>
+                            <p>Android</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="loginWk fr">
+                    <p class="login_tit">
+                        <span class="fl">登录企业空间</span>
+                        <a class="fr ewm_word erwmLogin">手机端下载</a>
+                    </p>
+                    <div class="login_form">
+                        <!--登录开始-->
+                        <form action="http://10.1.37.26:84/sso/login" method="post" id="loginform" onsubmit="return ckLoginForm();">
+                            <div class="fl mb10 wid_div_form">
+                                <div class="fl input_text relative"><span class="login_user_ico fr"></span>
+                                    <input type="text" id="username" name="username" value="" onfocus="var _obj = document.getElementById('usernameTips');if(_obj.innerHTML!=''&amp;&amp;_obj.innerHTML!='请输入用户名/邮箱')return;else _obj.innerHTML='';" onblur="var _obj = document.getElementById('usernameTips');if(this.value=='')_obj.innerHTML='请输入用户名/邮箱';" disableautocomplete="" autocomplete="off" tabindex="1" class="fl f14 text_put">
+                                    <span id="usernameTips" class="inputSpan" onclick="document.getElementById('username').focus();">请输入用户名/邮箱</span>
+                                </div>
+                                <span class="fl f14 error_word error_name" style="display:none;">帐号不能为空</span>
+                            </div>
+                            <div class="fl mb10 wid_div_form">
+                                <div class="fl input_text relative"><span class="login_mima_ico fr"></span>
+                                    <span id="password_yy_dl" class="login_input"></span><input type="password" id="password" name="password" tabindex="2" class="fl f14 text_put" value="" onfocus="var _obj = document.getElementById('passwordTips');if(_obj.innerHTML!=''&amp;&amp;_obj.innerHTML!='密码')return;_obj.innerHTML=''" onblur="var _obj = document.getElementById('passwordTips');if(this.value=='')_obj.innerHTML='密码';">
+                                    <span id="passwordTips" class="inputSpan" onclick="document.getElementById('password').focus();">密码</span>
+                                </div>
+                                <span class="fl f14 error_word error_pwd" style="display:none;">密码不能为空</span>
+                            </div>
+                            <div class="fl mb10 wid_div_form">
+                                <input id="loginbtn" type="button" value="登录" class="login_but f14">
+                                <p class="f12">
+                                    <span class="fl"><input type="checkbox" name="cookietime" id="cookietime" value="604800" tabindex="5" checked="checked">自动登录</span>
+                                    <a title="忘记密码" href="/account/lostpasswd/index" class="fr">忘记密码</a>
+                                </p>
+                            </div>
+                            <input name="loginaddr" type="hidden" value="1" checked="checked">
+                            <input type="hidden" value="-1" name="imgcode">
+                            <input type="hidden" id="back_url" name="back_url" value="/account/login/actlogin">
+                            <!--登录结束-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w1000">
+            <div class="login_jies">
+                <div class="login_Wjs fl">
+                    <p>组织内部社交</p>
+                    <div class="login_Wjsw f14">创建企业/组织内部社会化沟通与协作网络（企业SNS），基于集团、子公司、地方分公司、事业部、垂直业务线、部门工作组、虚拟工作组等多层次业务组织，建立全新以人为中心的社交管理模式，推动组织与文化变革，全面激发企业创新力。</div>
+                </div>
+                <div class="fr login_Pjs"><img src="/images/login_new/login_pic1.png" width="450" height="318"></div>
+            </div>
+
+            <div class="login_jies">
+                <div class="fl login_Pjs"><img src="/images/login_new/login_pic2.png" width="450" height="318"></div>
+                <div class="login_Wjs fr">
+                    <p>产业链协作</p>
+                    <div class="login_Wjsw f14">创建企业/组织面向外部产业链协同的SNS网络，基于客户社区、供应商社区、经销商社区、伙伴社区等沟通与协作网络，建立全新产业链上下游协作模式和新型战略伙伴关系，构建更加广泛和强大的商业生态系统。</div>
+                </div>
+            </div>
+
+            <div class="login_jies">
+                <div class="login_Wjs fl">
+                    <p>社会化商业</p>
+                    <div class="login_Wjsw f14">在一个更加广泛与开放的企业商务社交网络中，实现企业与企业、企业与人、人与人的沟通、协同、交易等社会化商业活动，更加精准的开展对外营销、服务、人力、采购等社会化业务，帮助企业和个人拓展与维系社会化商务关系，推动企业社会化转型。</div>
+                </div>
+                <div class="fr login_Pjs"><img src="/images/login_new/login_pic3.png" width="450" height="318"></div>
+            </div>
+        </div>
+         <!--footer-->
+        <footer class="footer_footer">
+            <div class="w1000 clearfix footer_footer_in">
+                <div class="fl w01 clearfix">
+                    <span class="dt"><i class="icons_footer01"></i></span>
+                    <span class="dd">
+                        <i>客服热线</i>
+                        <i>4006-815-456</i>
+                    </span>
+                </div>
+                <a class="fl w02 clearfix" href="mailto:upservice@yonyou.com">
+                     <span class="dt"><i class="icons_footer02"></i></span>
+                     <span class="dd">
+                        <i>客服邮箱</i>
+                        <i>upservice@yonyou.com</i>
+                    </span>
+                </a>
+                 <a class="fr w03 clearfix" href="http://chat.looyu.com/chat/chat/p.do?c=53518&amp;f=121982&amp;g=87496" target="_blank">
+                     <span class="dt"><i class="icons_footer03"></i></span>
+                     <span class="dd">
+                        <i>在线客服</i>
+                        <i>为您答疑解惑 >></i>
+                    </span>
+                </a>
+            </div>
+            <div class="w1000">京ICP备05007539号-10 版权所有：用友优普信息技术有限公司 2013-2015</div>
+        </footer>
+        <script type="text/javascript">
+            window.YY_VERSION = '?201408061802464';
+            window.YY_DEBUG_MODE = parseInt('1');
+            window.YY_JS_DIR = 'js';
+            window.yyurl = window.location.protocol + '//' + window.location.hostname
+                    + (window.location.port ? ':'+window.location.port : '');
+            window.sessid = "n7u9usp7493d0qbuek3mj2l4h0";
+            window.yyUopurl = "http://10.1.37.26:84";
+            window.yyBaseurl = window.location.protocol + '//' + window.location.hostname
+                    + (window.location.port ? ':'+window.location.port : '');
+            window.rscallback = "";
+            window.rscallbackflag = "0";
+            window.smallAvatar = "http://10.1.37.26:83/default_avatar.thumb.jpg";
+            window.middleAvatar = "http://10.1.37.26:83/default_avatar.middle.jpg";
+            window.orginAvatar = "http://10.1.37.26:83/default_avatar";
+            window.memid = "0";
+            window.random = Math.random();
+            _loginstat = true;
+            _isExpired = false;
+            //当前页面需要加载的js文件，json格式的字符串；
+            window.yyScript = '["modules\/login\/yy.login.js"]';
+            //js文件中使用的url函数，用来url全路径；
+            function url(str){
+                var url = str;
+                if(typeof url !== 'string') return ;
+                if(url.indexOf('http://')!==-1) return url;
+
+                var pos = url.lastIndexOf('.');
+                if(pos === -1)
+                    url = yyBaseurl + url;
+                else {
+                    var type = url.substr(pos+1);
+                    url = url.substr(0, pos);
+                    url = yyBaseurl + url+'.'+type;
+                }
+                return url;
+            }
+            //	alert(_loginstat);
+            //屏蔽错误
+            function killErrors(){
+                return true;
+            }
+            window.onerror = killErrors;
+        </script>
+                		<script type="text/javascript">
+            var _script = document.createElement('script');
+            _script.src = "http://10.1.37.26:84/sso/login_status?random=" + random;
+            document.body.appendChild(_script);
+        </script>
+		        
+
+        <script type="text/javascript">
+            var needValid = true;
+            if(typeof(_loginstat) == "undefined"){
+                needValid = false;
+            }
+            if(typeof(_isExpired) == "undefined")_isExpired = false;
+            if(typeof(_username) == "undefined")_username = '';
+            if(_isExpired == true)_loginstat = false;
+            function parseSid(sid){
+                if(sid.indexOf('+') > 0)return encodeURIComponent(sid);
+                return sid;
+            }
+        </script>
+                        <script type="text/javascript">
+    function loginjs(username){
+        if (username != '0'){
+            if(username == '-1'){
+            window.location.href = yyBaseurl + "/space/home/index/";
+        }else{
+            if(needValid){
+                if(_loginstat == false){
+                    if(_isExpired == true){
+                        window.location.href = yyBaseurl + "/account/login/logout/?refer=" + from;
+                    }else{
+                        var urlStr = window.location.href;
+                        var strArr = urlStr.split(yyBaseurl);
+                        var from = strArr[1];
+                        window.location.href = yyBaseurl + "/account/login/logout/?refer=" + from;
+                    }
+                }else if(_username != '' && (decodeURIComponent(_username) != username)){
+                    var urlStr = window.location.href;
+                    var strArr = urlStr.split(yyBaseurl);
+                    var from = strArr[1];
+                    window.location.href = yyBaseurl + "/account/login/actlogin/?sid=" + parseSid(sid) + "&refer=" + from;
+                }
+            }
+        }
+        }else {
+            if( _loginstat == true ){
+                if(_isExpired)document.execCommand('stop');
+                var urlStr = window.location.href;
+                var strArr = urlStr.split(yyBaseurl);
+                var from = strArr[1];
+                window.location.href = yyBaseurl + "/account/login/actlogin/?sid=" + parseSid(sid) + "&refer=" + from;
+            }
+        }
+    }
+</script>
+<script type="text/javascript" src="/account/login/ajaxloginjs?201408061802464"></script>
+        		<script type="text/javascript" src="/account/login/ajaxchangeloginhead?201408061802464"></script>
+<script>
+(function(){
+    var isIE = navigator.userAgent.indexOf("MSIE")>0 ? true : false;
+    /**
+     * 添加事件处理句柄;
+     * @param Array element [description]
+     * @param Array type    [description]
+     * @param Array handler [description]
+     */
+    function addHandler(element, type, handler){
+        if(element.addEventListener) {
+            element.addEventListener(type, handler, false);
+        }
+        else if(element.attachEvent) {
+            element.attachEvent('on'+type, handler);
+        }
+        else {
+            element['on'+type] = handler;
+        }
+    }
+    // dom ready..
+    window.onload = function(){
+        if($('#username').val().length > 0){
+            document.getElementById('usernameTips').innerHTML = '';
+        }
+        if($('#password').val().length > 0){
+            document.getElementById('passwordTips').innerHTML = '';
+        }
+        // 处理切换登录地址的事件;
+        var loginAddr = document.getElementsByTagName('input'),
+            o = null, input_name = '';
+        for(var i = 0; i<loginAddr.length; i++){
+            o = loginAddr[i];
+            input_name = o.getAttribute('name');
+            if (input_name === 'loginaddr') {
+                addHandler(o, 'click', function(e){
+                    var obj = e.target || e.srcElement;
+                    var value = parseInt(isIE ? obj.getAttributeNode('value').value  : obj.getAttribute('value'));
+                    if (value === 1) {
+                        document.getElementById('other_login').style.display = 'none';
+                        document.getElementById('back_url').setAttribute('value', url('/account/login/actlogin'));
+                    }
+                    else {
+                        document.getElementById('other_login').style.display = 'block';
+                        document.getElementById('back_url').setAttribute('value', 'http://www.chanjet.com');
+                    }
+                });
+            }
+        }
+        setBackUrl();
+        function setBackUrl() {
+            var backUrl = document.getElementById('back_url');
+            if (backUrl) {
+                var backUrl_val = backUrl.value;
+                if (backUrl_val === '/account/login/actlogin') {
+                    var url = window.yyBaseurl + backUrl_val;
+                    str = window.location.href;
+                    pos = str.indexOf('?');
+                    parastr = str.substr(pos+1,7);
+                    if(parastr == 'referer'){
+                        referer_url = str.substring(pos);
+                    }else{
+                        referer_url = '';
+                    }
+                    backUrl.value = url+referer_url;
+               }
+            }
+        }
+        // 绑定验证码的点击事件;
+        var verifyCode = document.getElementById('pageContext_verifyCode');
+        if (verifyCode) {
+            verifyCode.setAttribute('src', window.yyUopurl + '/imgcode/?temp='+(new Date().getTime().toString(36)));
+            verifyCode.style.display = 'block';
+            addHandler(verifyCode, 'click', function(e){
+                var obj = e.target || e.srcElement;
+                obj.setAttribute('src', window.yyUopurl + '/imgcode/?temp='+(new Date().getTime().toString(36)));
+            });
+        }
+    };
+
+	    // 处理点击登陆按钮的事件;
+        var loginBut = document.getElementById('login_but');
+        if (loginBut) {
+            addHandler(loginBut, 'click', function(e){
+                var obj = e.target || e.srcElement;
+                var loginDiv = document.getElementById('loginDiv');
+
+                var for_val = obj.getAttribute('for');
+                if (for_val === 'team') {
+                    var display_val = loginDiv.style.display;
+                    loginDiv.style.display = display_val == 'none'
+                                           ? ''
+                                           : 'none';
+                }
+                else {
+                    location.href = url('') + obj.getAttribute('forurl');
+                }
+            });
+        }
+    // dom ready END
+}());
+</script>
+
+		<script src="/js/lib/jq/jquery-1.7.1.min.js?201408061802464"></script>
+		<script src="/js/lib/jq/jquery.validate.js?201408061802464"></script>
+		<script src="/js/plugin/fancybox/jquery.fancybox-1.3.4.pack.js?201408061802464"></script>
+		<script src="/js/lib/yy.util.js?201408061802464"></script>
+		<script src="/js/lib/yy/yy.core.js?201408061802464"></script>
+
+		<script src="/js/modules/login/yy.login.js?201408061802464"></script>
+		<script src="/js/modules/login/yy.team.js?201408061802464"></script>
+		<script src="/js/modules/login/jquery.timers.js?201408061802464"></script>
+		<script src="/js/modules/login/jquery.slide.js?201408061802464"></script>
+        <script src="/js/modules/register/yy.zmFormValidate.js?201408061802464"></script>
+        <script src="/js/modules/register/yy.register.js?201408061802464"></script>
+
+
+
+                <script type="text/javascript">
+            if( _loginstat == true ){
+                if(_isExpired)document.execCommand('stop');
+                var urlStr = window.location.href;
+                var strArr = urlStr.split(yyBaseurl);
+                var from = strArr[1];
+                window.location.href = yyBaseurl + "/account/login/actlogin/?sid=" + parseSid(sid) + "&refer=" + from;
+            }
+		</script>
+        </body>
+</html>

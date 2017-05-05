@@ -1,0 +1,1 @@
+votecombo=new $.yy.comboDiv({fyd:{defaultid:0,remote:yyBaseurl+"/api/info/mygroup",format:function(b){var a=b.data,d=[];for(var c in a){d.push({txt:(a[c].group_name+(a[c].pub==1?"":'<span class="icoSuo"></span>')),id:a[c].gid})}return d}}});

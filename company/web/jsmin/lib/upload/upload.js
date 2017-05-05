@@ -1,0 +1,1 @@
+$(function(){var a=$("#fileFrom").val();new InitUpload({upload_url:YY.util.url("/file/act/swfupload/fileFrom/")+a+"/gid/"+$("#groupid").val()})});

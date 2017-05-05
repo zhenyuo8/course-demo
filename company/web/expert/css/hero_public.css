@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+/*author:英雄づ小将*/
+/*全局公用部分*/
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset,img {margin: 0;padding: 0;border: 0;}
+select,input{vertical-align:middle;font-size:12px;}
+textarea{font-size:12px;}
+body {background: #FFF;color:#000; font-size:12px;}
+ul,li{list-style:none;}
+img{display:block;border:0;}
+
+div{height:auto; min-height:0}
+
+a:link{text-decoration:none;color:#000;}
+a:visited{text-decoration:none;color:#000;}
+a:hover{color: #000;text-decoration: underline;}
+a{blr:expression(this.onFocus=this.blur())}/*if IE*/
+a{ outline:none;}/*if 火狐等现代浏览器*/
+
+.clear{clear:both;font-size:0;line-height:0;height:0;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } /* Hides from IE-mac \*/ 
+* html .clearfix {height: 1%;} /* End hide from IE-mac */ 
+
+.CutOver a{ display:block;width:310px;white-space:nowrap;overflow:hidden;float:left;-o-text-overflow: ellipsis; /* for Opera */text-overflow:ellipsis; /* for IE */ }
+.CutOver:after{ content:"...";padding-left:3px;font-size:12px; }/* for Firefox */

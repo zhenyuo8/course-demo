@@ -1,0 +1,1 @@
+var v="";if(typeof Vote!="undefined"){v=new Vote()}$("li[id^='voteBox']").find(":checkbox, :radio").live("click",v.showVoteButton);

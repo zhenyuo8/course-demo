@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*author:英雄づ小将*/
+
+body{background:#eeeeee;}
+.center{width:1000px;margin:0 auto;}
+.translucent{position:fixed;top:0;left:0;width:100%;height:100%;background:#FFF;z-index:99;filter:alpha(opacity=70); opacity:0.7;display:none;}
+/*IE6 fixed*/
+* html { background:url(*) fixed; }
+* html body { margin:0; height:100%; }
+* html .translucent { position: absolute; left: expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth); top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight); }
+
+#header{background:#fbfbfb;}
+#nav{border-bottom:1px solid #71acd7;background:#1e80c7;}
+#nav a:link,#nav a:visited{display:inline-block;padding:0 40px;font:bolder 14px/47px "宋体";color:#ffffff;background:url(../images/hero_navbg.jpg) repeat-y right top;}
+#nav a.current:link,#nav a.current:visited,#nav a:hover{background:#4395d0 url(../images/hero_navbg.jpg) repeat-y right top;;text-decoration:none;}
+
+#content{margin:20px auto 40px;padding:37px 0 60px 37px;width:963px;border:1px solid #dedede;background:#ffffff;}
+#intro{margin-bottom:30px;padding:20px 0;width:926px;background:#e8f2f9;}
+#intropic{float:left;margin-left:38px;width:238px;}
+#introcon{float:left;width:600px;font:13px/26px "微软雅黑", "黑体";color:#575757;}
+#introcon h1{padding-left:60px;font:24px/48px "微软雅黑", "黑体";color:#1e80c7;background:url(../images/hero_icon1.png) no-repeat left center;}
+#left{float:left;width:775px;}
+#dropmenu{width:743px;height:36px;background:#eeeeee; }
+#dropmenu ul{position:absolute;display:inline-block;height:33px;background:#eeeeee url(../images/hero_icon3.png) no-repeat right 15px;border-bottom:2px solid #f9ae2e;overflow:hidden;z-index:88;}
+#dropmenu li{padding:0 20px;font:15px/33px "微软雅黑", "黑体";color:#3d3d3d; cursor:pointer;}
+#dropmenu li:first-child{}
+#dropmenu li:hover{background:#d3d3d3;}
+.auto_con{display:none;}
+.instro2{margin:20px auto;width:670px;font:13px/26px "微软雅黑", "黑体";color:#575757;}
+.zjlist{width:760px;border-bottom:1px solid #dfdfdf;}
+.zjlist .zjcon{display:none;}
+.zjlist li{float:left;margin-bottom:2px;padding:27px 20px 0 35px;width:131px;;height:241px;font:14px/24px "微软雅黑", "黑体";color:#398acb;border-top:1px solid #dfdfdf;border-bottom:1px solid #dfdfdf;cursor:pointer;}
+.zjlist .cr{color:#398acb;}
+.zjlist img{margin-bottom:10px;}
+.zjlist li span{color:#575757;}
+
+#right{float:left;width:150px;}
+#floatmenu{border:1px solid #dedede;border-top:2px solid #1e80c7;border-bottom:none;background:#f6f6f6 url(../images/hero_icon4.png) no-repeat 25px 2px;}
+#floatmenu li{padding-left:52px;font:14px/58px "微软雅黑", "黑体";color:#717171;border-top:1px solid #ffffff;border-bottom:1px solid #dedede;cursor:pointer;}
+#floatmenu li.current,#floatmenu li:hover{color:#ffffff;background:#71acd8 url(../images/hero_icon5.png) no-repeat;}
+.fm1{background-position:25px 0px !important;}
+.fm2{background-position:25px -60px !important;}
+.fm3{background-position:25px -120px !important;}
+.fm4{background-position:25px -180px !important;}
+.fm5{background-position:25px -240px !important;}
+.fm6{background-position:25px -300px !important;}
+.fm7{background-position:25px -360px !important;}
+.fm8{background-position:25px -420px !important;}
+
+#copy{min-width:1000px;padding:15px 0;font:12px/24px "宋体";color:#ffffff;text-align:center;background:#224d6b;}
+
+
+#model{position:absolute;top:150px;left:50%;margin-left:-291px;padding:40px 45px;width:493px;box-shadow:0 0 35px #000000;border:10px solid #999 \9;background:#eeeeee;z-index:100;display:none;}
+#model .close{position:absolute;top:-15px;right:-15px;top:-10px \9;right:-10px \9;width:30px;height:30px;font:30px/30px Arial, Helvetica, sans-serif;color:#ffffff;text-align:center;background:#5c5c5c;border-radius:16px;cursor:pointer;}
+#model .zjpic{float:left;margin-right:30px;}
+#model .zjcon{clear:both;}
+#model .cr{display:none;}
+#model .zjcw{float:left;margin:50px 0 0 20px;}
+#model .zjname{display:inline-block;margin-top:20px;font:20px/28px "微软雅黑", "黑体";color:#282828;}
+#model .zjjob{font:16px/28px "微软雅黑", "黑体";color:#282828;}
+#model .zjcon{padding-top:20px;font:13px/24px "微软雅黑", "黑体";color:#575757;}

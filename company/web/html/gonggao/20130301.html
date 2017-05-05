@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<title>系统登陆入口变更通知</title>
+<link href="/css/shezhi.css" rel="stylesheet" type="text/css">
+<link href="/css/master.css" rel="stylesheet" type="text/css">
+</head>
+<body class="ydCont">
+<div class="header_yd">
+	<div class="header_yd_in ydHead">
+    	<header class="w980 new_logo relative clearfix">
+        	<div class="fl">
+        		<a href="http://esn.chanjet.com" target="_blank">
+        			<img src="/images/login/new_login_logo.png" width="240" height="79">
+        		</a>
+            	<span class="logotext">全球组织社会化协同平台</span>
+			</div>
+			<a href="javascript:;"><img src="/images/login/logo_cjt.png" class="fr mt20"></a>
+        </header>
+		<article class="ydContinp0">
+			<header class="ydzlHead">
+				<h1>提示</h1>
+			</header>
+            <!--步骤内容-->
+            <div class="step_cont">	
+				<div class="xtrk_step_tit">系统登录入口变更通知</div>
+                <p>您好，为了更好的服务于商务伙伴，畅捷通信息技术有限公司将系统入口统一变更为【畅捷好渠道企业空间】，</p>
+                <p>
+					<span class="fontB c666">登录地址：</span>
+					<a href="http://esn.chanjet.com" target="_blank">esn.chanjet.com</a>，您可以点击链接进入【畅捷好渠道企业空间】，具体操作步骤如下：
+				</p>
+                <div class="xtrk_step_tit2 mt20 f14 fontB">登录方式</div>
+				
+				<!--已经加入-->
+   	  	 	  	<div class="step_ico_tit user">如果您已加入【畅捷好渠道企业空间】，请按以下步骤操作：</div>
+           	  	<div class="step_01">
+					<a href="http://esn.chanjet.com" target="_blank"><img src="/images/login/step_01.png" width="625" height="60"></a>
+				</div>
+				
+				<!--未加入-->
+  	 	  	  	<div class="step_ico_tit new_user">如果您未加入【畅捷好渠道企业空间】，请按以下步骤操作：</div>
+                <div class="step_02 step_02_1">
+                	<a href="javascript:;" class="yy-step step_a1 cur">注册企业空间</a>
+                    <a href="javascript:;" class="yy-step step_a2">登录企业空间</a>
+                    <a href="javascript:;" class="yy-step step_a3">申请加入【畅捷好渠道企业空间】</a>
+                </div>
+				
+				<!--第一步-->
+				<div class="step_a1 yy-stepContent">
+					<p class="word_12">1、登录<a href="http://esn.chanjet.com" target="_blank">esn.chanjet.com</a>，在注册栏输入公司邮箱并点击【注册企业空间】；</p>
+					<div class="step_03"><img src="/images/login/step_03.png" width="352" height="95"></div>
+					<p class="word_12 pb70">2、页面跳转后，按系统提示进行操作即可。</p>
+				</div>
+				<!--第二步-->
+				<div class="hidden yy-stepContent">
+					<p class="word_12">登录<a href="javascript:;" target="_blank">esn.chanjet.com</a>，点击【登录】，使用用户名、密码进入空间首页。</p>
+                	<div class="step_03"><img src="/images/login/step_04.png" width="440" height="188"></div>
+				</div>
+				<!--第三步-->
+				<div class="hidden yy-stepContent">
+					<p class="word_12">1、将企业名称、企业空间用户名及邮箱发送至<a href="mailto:wangchao@chanjet.com">wangchao@chanjet.com</a>；</p>
+					<p class="word_12 pb70">2、审批通过后，按审批邮件提示进行操作即可。</p>
+				</div>
+				
+                <div class="step_bot f12">
+                	<span class="fl">咨询电话： 18910888880&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询服务邮箱：wangchao@chanjet.com</span>
+                    <span class="fr">畅捷通信息技术有限公司</span>
+                </div>
+            </div>
+		</article>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+	<div class="w550">
+    	<a href="javascript:;"><img src="/images/login/xt_footer_ico.png" width="40" height="40"></a>
+        <p class="p1">
+        	<a href="http://clouds.yonyou.com/" target="_blank">用友公有云</a>  
+        	<a href="http://open.yonyou.com/" target="_blank">开发者中心</a>  
+        	<a href="http://www.chanjet.com/apps.php" target="_blank">应用中心</a>
+        	<a href="http://store.yonyou.com/" target="_blank">用友商城</a>  
+        	<a href="http://niwen.yonyou.com/" target="_blank">用友云服务</a>
+        </p>
+        <p class="p2"> 京ICP备05007539号-7  Powered by <a href="javascript:;">用友云平台</a> 1.5 © 2009-2012 yonyou Software CO.LTD</p>
+    </div>
+</div>
+<script src="/js/lib/jq/jquery-1.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.yy-step').click(function(){
+		var index = $(this).index();
+			className = 'step_02 step_02_' + (index + 1);
+		$(this).parent('div.step_02').attr('class', '').attr('class', className);
+		$(this).addClass('cur').siblings().removeClass('cur');
+		$('.yy-stepContent').addClass('hidden');
+		$('.yy-stepContent').eq(index).removeClass('hidden');
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>检测平台</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .hfd_box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hfd_zzc{
+            position:relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:#000000;
+            opacity: 0.7;
+            filter:alpha(opacity=70);
+        }
+        .hfd_im{
+            position: absolute;
+            right: 7%;
+            top: 6%;
+        }
+        @media screen and (min-width:320px) and (max-width: 720px){
+            .hfd_im{
+                width: 10rem;
+            }
+        }
+        @media screen and (min-width:800px) and (max-width: 1300px) {
+            .hfd_im{
+                width: 8.8rem;
+                height: 6rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="hfd_box" id="hfdd">
+    <div class="hfd_zzc">
+        <img class="hfd_im" id="hfd_i">
+    </div>
+</div>
+
+</body>
+<script>
+    (function (doc, win) {
+
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc    = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (clientWidth>=1200) {
+                        clientWidth = 1200;
+                    };
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 1200) + 'px';
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+
+    })(document, window);
+    //平台检测
+    (function(){
+        var  hfdi=document.getElementById('hfd_i');
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        if (browser.versions.mobile) {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                if (browser.versions.iPhone||browser.versions.iPad) {
+                    hfdi.setAttribute('src','/images/ck_mobile/ios_img@3x.png');
+                    return;
+                }else if(browser.versions.android){
+                    hfdi.setAttribute('src', '/images/ck_mobile/Android_img@3x.png');
+                    return;
+                }else{
+                    hfdi.setAttribute('src', '/images/ck_mobile/Android_img@3x.png');
+                    return;
+                }
+            }else{
+                document.getElementById('hfdd').style.display='none'
+            }
+        }
+    })()
+</script>
+</html>

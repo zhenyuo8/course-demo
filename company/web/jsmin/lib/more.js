@@ -1,0 +1,1 @@
+function mymore(a){var b=parseInt($("#mypage").val())+1;$("#mypage").val(b);getmore(b,a)}function getmore(c,a){var b=$("#more_info");var a=a+"/page/"+c+"/rand/"+Math.random();$.get(a,function(d){if(d!=""){$("#more_info").append(d)}else{$("#more_feed").html("没有更多内容了...")}})};

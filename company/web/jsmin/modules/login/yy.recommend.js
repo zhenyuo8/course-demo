@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#checkAll").live("click",function(){if($(this).attr("checked")=="checked"){$("input[name^='parttner']").attr("checked","checked")}else{$("input[name^='parttner']").removeAttr("checked")}})});

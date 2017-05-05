@@ -1,0 +1,1 @@
+$(function(){var a=$(".call").attr("id");$(".call").fancybox({modal:false,width:4,height:3,transitionIn:"elastic",transitionOut:"elastic",speedIn:200,speedOut:200,showCloseButton:false,href:yyBaseurl+"/call/index/resend/id/",onStart:function(e,d,g){var f=$(e).attr("cid");this.href=this.href+f}})});

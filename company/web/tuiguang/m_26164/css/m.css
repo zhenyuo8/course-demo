@@ -1,0 +1,15 @@
+body {color:#fff;}
+.p1, .p2 {width:100%;height:100%;}
+.fp-tableCell {vertical-align: top;}
+.p1 {background: #de0716 url(../images/p1.jpg) no-repeat scroll left bottom / contain;}
+.p1 a {display: block;position:absolute;top:67%;right:13%;width:75%;} 
+.arrow {background: url(../images/p1.jpg) no-repeat scroll right bottom;background-size: 200%;right:0;width:50%;height:10%;position: absolute;bottom:0;}
+.p1 a img{width: 100%;}
+.p2 {background: url(../images/p2_bg.jpg) repeat-y scroll center bottom;background-size: cover;}
+.p2 .ren {margin: 0 auto;background: url(../images/p2_ren.png) no-repeat scroll center bottom / contain;height: 85%;width: 95%;}
+.p2 .ren a{display: block;width:50%; position: absolute; right: 20px; top: 50%;}
+.p2 .ren a img{width: 100%;}
+.p2 .bottom {background: #de0716;height: 15%;bottom: 0;}
+.p2 .bottom .left, .p2 .bottom .right {float: left; width: 50%;padding: 10px 0;}
+.p2 .bottom img {width:50%;float:right;margin-right: 10px;}
+.p2 .bottom .right {font-size:1em;line-height:1.2em;}
